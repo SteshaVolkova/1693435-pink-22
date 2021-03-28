@@ -7,9 +7,9 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/pink.png" alt="pink logo">
+        <img src="img/pink.svg" alt="pink logo">
       </a>
-      <nav class="main-navigation">
+      <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть мобильное меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -41,11 +41,8 @@
             <p class="download-the-app__slogan">
             Взгляните на жизнь иначе!
             </p>
-            <div class="download-the-app--image">
-              <img src="img/phone.png" alt="phone in hand">
-              <div class="download-the-app--background-image">
-                <img src="img/screen.png" alt="phone in hand">
-              </div>
+            <div class="download-the-app__image">
+              <img src="img/phone-hand.png" alt="phone in hand">
             </div>
           </div>
           <div class="download-the-app__bottom-side">
@@ -69,7 +66,7 @@
       <section class="offers">
         <div class="offers__wrapper">
           <h2 class="visually-hidden">Предложения от Pink!</h2>
-          <header class="offres__header">
+          <header class="offers__header">
             <p class="offers__slogan">
             Устали от серости мегаполиса?
             </p>
@@ -105,10 +102,7 @@
               </li>
             </ul>
             <div class="offers__image">
-              <img src="img/iphone-3.png" alt="phone">
-              <div class="offers__image-background">
-                <img src="img/iphone-screen-3.png" alt="phome's background">
-              </div>
+              <img src="img/phone-3.png" alt="phone">
             </div>
           </div>
         </div>
@@ -118,7 +112,7 @@
         <div class="user-reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
           <ul class="user-reviews__list slider__list">
-            <li class="user-reviews__item slider__item">
+            <li class="user-reviews__item slider__item" id="user-1">
               <h2 class="user-reviews__user-name">Николай Петров</h2>
               <h3 class="user-reviews__user-description">25 лет, водитель трамвая</h3>
               <p class="user-reviews__user-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
@@ -126,7 +120,7 @@
                 фотографии!»
               </p>
             </li>
-            <li class="user-reviews__item slider__item">
+            <li class="user-reviews__item slider__item" id="user-2">
               <h2 class="user-reviews__user-name">Николай Петров</h2>
               <h3 class="user-reviews__user-description">25 лет, водитель трамвая</h3>
               <p class="user-reviews__user-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
@@ -134,7 +128,7 @@
                 фотографии!»
               </p>
             </li>
-            <li class="user-reviews__item slider__item">
+            <li class="user-reviews__item slider__item" id="user-3">
               <h2 class="user-reviews__user-name">Николай Петров</h2>
               <h3 class="user-reviews__user-description">25 лет, водитель трамвая</h3>
               <p class="user-reviews__user-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
@@ -144,82 +138,92 @@
             </li>
           </ul>
           <p class="user-reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <a href="#user-1" class="slider__toggle slider__toggle--current">1</a>
+            <a href="#user-2" class="slider__toggle">2</a>
+            <a href="#user-3" class="slider__toggle">3</a>
           </p>
         </div>
       </section>
 
       <section class="price">
-        <div class="price-wrapper">
+        <div class="price__wrapper slider">
           <h2 class="visually-hidden">Тарифы приложения.</h2>
-          <ul class="price__list slider__list">
-            <li class="price__item slider__item">
-              <div class="price__name">
+
+
+					<table class="slides">
+						<tr>
+							<th class="price__transparent-block">1</th>
+							<th class="price__title" id="price-1">
                 <h2 class="price__title">База</h2>
                 <p class="price__sum">1,99 USD</p>
-              </div>
-              <div class="price__option-pink">
-                <p class="price__option-name">Розовый фильтр</p>
-                <p class="price__option-value enabled">Yes</p>
-              </div>
-              <div class="price__option-smiles">
-                <p class="price__option-name">Смайлики</p>
-                <p class="price__option-value">No</p>
-              </div>
-              <div class="price__option-comments">
-                <p class="price__option-name">Комментарии</p>
-                <p class="price__option-value">No</p>
-              </div>
-            </li>
-            <li class="price__item slider__item">
-              <div class="price__name hit">
-                <h2 class="price__title">СТАНДАРТ</h2>
+							</th>
+							<th class="price__title" id="price-2">
+                <h2 class="price__title">Стандарт</h2>
                 <p class="price__sum">3,99 USD</p>
-              </div>
-              <div class="price__option-pink">
-                <p class="price__option-name">Розовый фильтр</p>
-                <p class="price__option-value enabled">Yes</p>
-              </div>
-              <div class="price__option-smiles">
-                <p class="price__option-name">Смайлики</p>
-                <p class="price__option-value enabled">Yes</p>
-              </div>
-              <div class="price__option-comments">
-                <p class="price__option-name">Комментарии</p>
-                <p class="price__option-value">No</p>
-              </div>
-            </li>
-            <li class="price__item slider__item">
-              <div class="price__name">
-                <h2 class="price__title">АНЛИМ</h2>
+							</th>
+							<th class="price__title" id="price-3">
+                <h2 class="price__title">Анлим</h2>
                 <p class="price__sum">9,99 USD</p>
-              </div>
-              <div class="price__option-pink">
-                <p class="price__option-name">Розовый фильтр</p>
-                <p class="price__option-value enabled">Yes</p>
-              </div>
-              <div class="price__option-smiles">
-                <p class="price__option-name">Смайлики</p>
-                <p class="price__option-value enable">Yes</p>
-              </div>
-              <div class="price__option-comments">
-                <p class="price__option-name">Комментарии</p>
-                <p class="price__option-value enable">Yes</p>
-              </div>
-            </li>
-          </ul>
+							</th>
+						</tr>
+						<tr>
+							<td class="price__option-name mobile-hidden">Розовый фильтр</td>
+							<td class="price__option-value">
+								<span class="desktop-hidden">Розовый фильтр</span>
+								<span class="enable">Yes</span>
+							</td>
+							<td class="price__option-value">
+								<span class="desktop-hidden">Розовый фильтр</span>
+								<span class="enable">Yes</span>
+							</td>
+							<td class="price__option-value">
+								<span class="desktop-hidden">Розовый фильтр</span>
+								<span class="enable">Yes</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="price__option-name mobile-hidden">Смайлики</td>
+							<td class="price__option-value">
+								<span class="desktop-hidden">Смайлики</span>
+								<span>No</span>
+							</td>
+							<td class="price__option-value">
+								<span class="desktop-hidden">Смайлики</span>
+								<span class="enable">Yes</span>
+							</td>
+							<td class="price__option-value">
+								<span class="desktop-hidden">Смайлики</span>
+								<span class="enable">Yes</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="price__option-name mobile-hidden">Комментарии</td>
+							<td class="price__option-value">
+								<span class="desktop-hidden">Комментарии</span>
+								<span>No</span>
+							</td>
+							<td class="price__option-value">
+								<span class="desktop-hidden">Комментарии</span>
+								<span>No</span>
+							</td>
+							<td class="price__option-value">
+								<span class="desktop-hidden">Комментарии</span>
+								<span class="enable">Yes</span>
+							</td>
+						</tr>
+					</table>
+
+
           <p class="price__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+						<a href="#price-1" class="slider__toggle slider__toggle--current">1</a>
+						<a href="#price-2" class="slider__toggle">2</a>
+						<a href="#price-3" class="slider__toggle">3</a>
           </p>
         </div>
       </section>
 
-      <section class="contac-info">
-        <div class="contact-info__wrapper">
+      <section class="contact-info">
+        <address class="contact-info__wrapper">
           <h2 class="visually-hidden">Контактная информация для связи</h2>
           <p class="contact-info__title">Остались вопросы?<br>
             Свяжитесь с нами!
@@ -235,18 +239,15 @@
             </li>
             <li class="contact-info__item">
               <h3 class="contact-info__title">Приезжайте в гости:</h3>
-              <a>ул. Большая Конюшенная, 19/8</a>
+              <a href="https://goo.gl/maps/FFvPNicZ5M7JyyS56">ул. Большая Конюшенная, 19/8</a>
             </li>
           </ul>
-        </div>
+        </address>
       </section>
 
       <section class="map">
         <div class="map__image">
-          <img src="img/map.png" alt="phome's background">
-          <div class="map__marker">
-            <img src="img/map-marker.png" alt="phome's background">
-          </div>
+          <img src="img/map.png" alt="map">
         </div>
       </section>
     </main>
@@ -254,25 +255,25 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="img/glasses.png" alt="glasses logo">
-          <img src="img/pink.png" alt="pink logo">
+          <img src="img/glasses.svg" alt="glasses logo">
+          <img src="img/pink.svg" alt="pink logo">
         </div>
       </div>
       <div class="page-footer__social">
         <ul class="page-footer__social-list">
           <li class="page-footer__social-item">
             <a href="https://www.instagram.com/htmlacademy">
-              <img src="img/twitter.png" alt="twitter icon">
+              <img src="img/twitter.svg" alt="twitter icon">
             </a>
           </li>
           <li class="page-footer__social-item">
             <a href="https://www.facebook.com/htmlacademy">
-              <img src="img/facebook.png" alt="facebook icon">
+              <img src="img/facebook.svg" alt="facebook icon">
             </a>
           </li>
           <li class="page-footer__social-item">
             <a href="https://www.youtube.com/user/htmlacademyru">
-              <img src="img/youtube.png" alt="youtube icon">
+              <img src="img/youtube.svg" alt="youtube icon">
             </a>
           </li>
         </ul>
@@ -280,7 +281,7 @@
       <div class="page-footer__copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/html-academy.png" alt="html academy icon">
+          <img src="img/html-academy.svg" alt="html academy icon">
         </a>
       </div>
     </footer>

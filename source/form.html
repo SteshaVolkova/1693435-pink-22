@@ -14,13 +14,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a>Главная</a>
+              <a href="/">Главная</a>
             </li>
             <li class="main-nav__item">
               <a href="/photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Конкурс</a>
+              <a href="/form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
               <a href="#">Html academy</a>
@@ -40,19 +40,22 @@
         </div>
       </section>
 
-      <form class="travel-achievements__form-block" action="https://www.google.com/search?q=htmlacademy" method="get">
+      <form class="form-block" action="https://www.google.com/search?q=htmlacademy" method="post">
         <section class="personal-information">
           <div class="personal-information__wrapper">
             <h2 class="visually-hidden">Поделись историей и выйграй!</h2>
             <p class="personal-information__headline">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
             </p>
-            <label for="last-name">Фамилия:</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию *" required>
-            <label for="first-name">Имя:</label>
-            <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" required>
-            <label for="patronymic">Отчество:</label>
-            <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" >
+            <fieldset>
+              <legend class="visually-hidden">Enter your name</legend>
+              <label for="last-name">Фамилия:</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию *" autocomplete required>
+              <label for="first-name">Имя:</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" autocomplete required>
+              <label for="additional-name">Отчество:</label>
+              <input type="text" id="additional-name" name="additional-name" placeholder="Ну и отчество тоже" autocomplete >
+            </fieldset>
           </div>
         </section>
 
@@ -62,40 +65,46 @@
             <p class="travel-achievements__headline">
               Ваши безбашенные достижения в путешествии
             </p>
-            <div class="travel-achievements__checkbox">
-              <label for="selfie">Сделал селфи с акулой</label>
-              <input type="checkbox" id="selfie" name="selfie" checked>
-            </div>
-            <div class="travel-achievements__checkbox">
-              <label for="burnt-beach">Обгорел на пляже</label>
-              <input type="checkbox" id="burnt-beach" name="burnt-beach" checked>
-            </div>
-            <div class="travel-achievements__checkbox">
-              <label for="see-celebrity">Видел Чака Норриса</label>
-              <input type="checkbox" id="see-celebrity" name="see-celebrity" >
-            </div>
-            <div class="travel-achievements__checkbox">
-              <label for="souvnirs">Накупил сувениров</label>
-              <input type="checkbox" id="souvnirs" name="souvnirs" >
-            </div>
-            <div class="travel-achievements__checkbox">
-              <label for="hold-tower">Удержал башню</label>
-              <input type="checkbox" id="hold-tower" name="hold-tower" checked>
-            </div>
-            <div class="travel-achievements__checkbox">
-              <label for="smash-hotel">Разгромил отель</label>
-              <input type="checkbox" id="smash-hotel" name="smash-hotel" >
-            </div>
+            <fieldset>
+              <legend class="visually-hidden">Select your achievements</legend>
+              <div class="travel-achievements__checkbox">
+                <input type="checkbox" id="selfie" name="selfie" checked>
+                <label for="selfie">Сделал селфи с акулой</label>
+              </div>
+              <div class="travel-achievements__checkbox">
+                <input type="checkbox" id="burnt-beach" name="burnt-beach" checked>
+                <label for="burnt-beach">Обгорел на пляже</label>
+              </div>
+              <div class="travel-achievements__checkbox">
+                <input type="checkbox" id="see-celebrity" name="see-celebrity" >
+                <label for="see-celebrity">Видел Чака Норриса</label>
+              </div>
+              <div class="travel-achievements__checkbox">
+                <input type="checkbox" id="souvnirs" name="souvnirs" >
+                <label for="souvnirs">Накупил сувениров</label>
+              </div>
+              <div class="travel-achievements__checkbox">
+                <input type="checkbox" id="hold-tower" name="hold-tower" checked>
+                <label for="hold-tower">Удержал башню</label>
+              </div>
+              <div class="travel-achievements__checkbox">
+                <input type="checkbox" id="smash-hotel" name="smash-hotel" >
+                <label for="smash-hotel">Разгромил отель</label>
+              </div>
+            </fieldset>
           </div>
         </section>
 
         <section class="contact-details">
           <div class="contact-details__wrapper">
             <h2 class="visually-hidden">Заполнить контактные данные</h2>
-            <label for="phone-number">Номер телефона</label>
-            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста">
-            <label for="email-address">Адрес почты</label>
-            <input type="email" id="email-address" name="email-address" placeholder="Введите ваше имя *" required>
+            <fieldset>
+              <legend class="visually-hidden">Enter your contact details</legend>
+              <label for="phone-number">Номер телефона</label>
+              <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста" autocomplete>
+              <label for="email-address">Адрес почты</label>
+              <input type="email" id="email-address" name="email-address" placeholder="Введите ваше имя *" autocomplete required>
+            </fieldset>
           </div>
         </section>
 
@@ -103,18 +112,21 @@
           <div class="selection-os__wrapper">
             <h2 class="visually-hidden">Выберите свою операционную систему</h2>
             <p class="selection-os__headign">С каким приложением путешествовали?</p>
-            <div class="selection-os__element">
-              <label for="ios-pink">Pink для iOS</label>
-              <input name="select-os" id="ios-pink" type="radio" value="ios" checked>
-            </div>
-            <div class="selection-os__element">
-              <label for="android-pink">Pink на Android</label>
-              <input name="select-os" id="android-pink" type="radio" value="android">
-            </div>
-            <div class="selection-os__element">
-              <label for="windows-pink">Windows Phone</label>
-              <input name="select-os" id="windiws-pink" type="radio" value="windows">
-            </div>
+            <fieldset>
+              <legend class="visually-hidden">Select you OS</legend>
+              <div class="selection-os__element">
+                <input name="select-os" id="ios-pink" type="radio" value="ios" checked>
+                <label for="ios-pink">Pink для iOS</label>
+              </div>
+              <div class="selection-os__element">
+                <input name="select-os" id="android-pink" type="radio" value="android">
+                <label for="android-pink">Pink на Android</label>
+              </div>
+              <div class="selection-os__element">
+                <input name="select-os" id="windiws-pink" type="radio" value="windows">
+                <label for="windows-pink">Windows Phone</label>
+              </div>
+            </fieldset>
           </div>
         </section>
 
@@ -127,7 +139,7 @@
         </section>
 
         <input type="submit" value="Отправить форму">
-        <p class="information-note-for-forms"> — обязательные поля</p>
+        <small class="information-note-for-forms"><small class="information-note-for-forms__red-star">*</small> — обязательные поля</small>
 
       </form>
     </main>

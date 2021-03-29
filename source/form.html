@@ -14,13 +14,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="/">Главная</a>
+              <a href="/index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a href="/photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a href="/form.html">Конкурс</a>
+              <a>Конкурс</a>
             </li>
             <li class="main-nav__item">
               <a href="#">Html academy</a>
@@ -42,92 +42,80 @@
 
       <form class="form-block" action="https://www.google.com/search?q=htmlacademy" method="post">
         <section class="personal-information">
-          <div class="personal-information__wrapper">
-            <h2 class="visually-hidden">Поделись историей и выйграй!</h2>
+          <fieldset class="personal-information__wrapper">
+            <legend class="visually-hidden">Enter your name</legend>
             <p class="personal-information__headline">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
             </p>
-            <fieldset>
-              <legend class="visually-hidden">Enter your name</legend>
-              <label for="last-name">Фамилия:</label>
-              <input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию *" autocomplete required>
-              <label for="first-name">Имя:</label>
-              <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" autocomplete required>
-              <label for="additional-name">Отчество:</label>
-              <input type="text" id="additional-name" name="additional-name" placeholder="Ну и отчество тоже" autocomplete >
-            </fieldset>
-          </div>
+            <label for="last-name">Фамилия:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию *" autocomplete="family-name" required>
+            <label for="first-name">Имя:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" autocomplete="given-name" required>
+            <label for="additional-name">Отчество:</label>
+            <input type="text" id="additional-name" name="additional-name" placeholder="Ну и отчество тоже" autocomplete="additional-name" >
+          </fieldset>
         </section>
 
         <section class="travel-achievements">
-          <div class="travel-achievements__wrapper">
-            <h2 class="visually-hidden">Отметить достижения в путешествии</h2>
+          <fieldset class="travel-achievements__wrapper">
+            <legend class="visually-hidden">Select your achievements</legend>
             <p class="travel-achievements__headline">
-              Ваши безбашенные достижения в путешествии
+            Ваши безбашенные достижения в путешествии
             </p>
-            <fieldset>
-              <legend class="visually-hidden">Select your achievements</legend>
-              <div class="travel-achievements__checkbox">
-                <input type="checkbox" id="selfie" name="selfie" checked>
-                <label for="selfie">Сделал селфи с акулой</label>
-              </div>
-              <div class="travel-achievements__checkbox">
-                <input type="checkbox" id="burnt-beach" name="burnt-beach" checked>
-                <label for="burnt-beach">Обгорел на пляже</label>
-              </div>
-              <div class="travel-achievements__checkbox">
-                <input type="checkbox" id="see-celebrity" name="see-celebrity" >
-                <label for="see-celebrity">Видел Чака Норриса</label>
-              </div>
-              <div class="travel-achievements__checkbox">
-                <input type="checkbox" id="souvnirs" name="souvnirs" >
-                <label for="souvnirs">Накупил сувениров</label>
-              </div>
-              <div class="travel-achievements__checkbox">
-                <input type="checkbox" id="hold-tower" name="hold-tower" checked>
-                <label for="hold-tower">Удержал башню</label>
-              </div>
-              <div class="travel-achievements__checkbox">
-                <input type="checkbox" id="smash-hotel" name="smash-hotel" >
-                <label for="smash-hotel">Разгромил отель</label>
-              </div>
-            </fieldset>
-          </div>
+            <div class="travel-achievements__checkbox">
+              <input type="checkbox" id="selfie" name="selfie" checked>
+              <label for="selfie">Сделал селфи с акулой</label>
+            </div>
+            <div class="travel-achievements__checkbox">
+              <input type="checkbox" id="burnt-beach" name="burnt-beach" checked>
+              <label for="burnt-beach">Обгорел на пляже</label>
+            </div>
+            <div class="travel-achievements__checkbox">
+              <input type="checkbox" id="see-celebrity" name="see-celebrity" >
+              <label for="see-celebrity">Видел Чака Норриса</label>
+            </div>
+            <div class="travel-achievements__checkbox">
+              <input type="checkbox" id="souvnirs" name="souvnirs" >
+              <label for="souvnirs">Накупил сувениров</label>
+            </div>
+            <div class="travel-achievements__checkbox">
+              <input type="checkbox" id="hold-tower" name="hold-tower" checked>
+              <label for="hold-tower">Удержал башню</label>
+            </div>
+            <div class="travel-achievements__checkbox">
+              <input type="checkbox" id="smash-hotel" name="smash-hotel" >
+              <label for="smash-hotel">Разгромил отель</label>
+            </div>
+          </fieldset>
         </section>
 
         <section class="contact-details">
-          <div class="contact-details__wrapper">
-            <h2 class="visually-hidden">Заполнить контактные данные</h2>
-            <fieldset>
-              <legend class="visually-hidden">Enter your contact details</legend>
-              <label for="phone-number">Номер телефона</label>
-              <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста" autocomplete>
-              <label for="email-address">Адрес почты</label>
-              <input type="email" id="email-address" name="email-address" placeholder="Введите ваше имя *" autocomplete required>
-            </fieldset>
-          </div>
+          <fieldset class="contact-details__wrapper">
+            <legend class="visually-hidden">Enter your contact details</legend>
+            <label for="phone-number">Номер телефона</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста" autocomplete="tel">
+            <label for="email-address">Адрес почты</label>
+            <input type="email" id="email-address" name="email-address" placeholder="Введите ваше имя *" autocomplete="email" required>
+          </fieldset>
         </section>
 
         <section class="selection-os">
-          <div class="selection-os__wrapper">
-            <h2 class="visually-hidden">Выберите свою операционную систему</h2>
+          <fieldset class="selection-os__wrapper">
+            <legend class="visually-hidden">Select you OS</legend>
             <p class="selection-os__headign">С каким приложением путешествовали?</p>
-            <fieldset>
-              <legend class="visually-hidden">Select you OS</legend>
-              <div class="selection-os__element">
-                <input name="select-os" id="ios-pink" type="radio" value="ios" checked>
-                <label for="ios-pink">Pink для iOS</label>
-              </div>
-              <div class="selection-os__element">
-                <input name="select-os" id="android-pink" type="radio" value="android">
-                <label for="android-pink">Pink на Android</label>
-              </div>
-              <div class="selection-os__element">
-                <input name="select-os" id="windiws-pink" type="radio" value="windows">
-                <label for="windows-pink">Windows Phone</label>
-              </div>
-            </fieldset>
-          </div>
+            <div class="selection-os__element">
+              <input name="select-os" id="ios-pink" type="radio" value="ios" checked>
+              <label for="ios-pink">Pink для iOS</label>
+            </div>
+            <div class="selection-os__element">
+              <input name="select-os" id="android-pink" type="radio" value="android">
+              <label for="android-pink">Pink на Android</label>
+            </div>
+            <div class="selection-os__element">
+              <input name="select-os" id="windiws-pink" type="radio" value="windows">
+              <label for="windows-pink">Windows Phone</label>
+            </div>
+          </fieldset>
         </section>
 
         <section class="user-emotions">
@@ -139,7 +127,7 @@
         </section>
 
         <input type="submit" value="Отправить форму">
-        <small class="information-note-for-forms"><small class="information-note-for-forms__red-star">*</small> — обязательные поля</small>
+        <small class="information-note-for-forms"><span class="information-note-for-forms__red-star">*</span> — обязательные поля</small>
 
       </form>
     </main>

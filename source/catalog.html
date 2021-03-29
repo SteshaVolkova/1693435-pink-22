@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class="page catalog-page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <script>
+      function sizePic() {
+        size = document.getElementById("photo-size").value;
+        img = document.getElementById("your-picture");
+        img.width = 60 + 20*size;
+      }
+    </script>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/pink.svg" alt="pink logo">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть мобильное меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a hraf="/index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a>Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="/form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="catalog-page-tite">
+        <div class="catalog-page-tite__wrapper">
+          <h1 class="visually-hidden">Выкладывайте свои фотографии в Pink</h1>
+          <p class="catalog-page-tite__head">
+          Фотографии пользователей
+          </p>
+        </div>
+      </section>
+
+      <section class="look-photos">
+        <div class="look-photos__wrapper">
+          <h2 class="visually-hidden">Добавьте своё фото в Pink</h2>
+          <p class="look-photos__text">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          </p>
+          <p class="look-photos__text">
+          Видите, как не хватает ваших?
+          </p>
+        </div>
+      </section>
+
+      <section class="photo-catalog">
+        <h2 class="visually-hidden">Взгляните на фото других пользователей</h2>
+        <div class="photo-catalog__best-panorama">
+          <div class="photo-catalog__panorama-image">
+            <img src="img/panorama-tablet.png" alt="best panorama">
+          </div>
+        </div>
+        <div class="photo-catalog__wrapper">
+          <ul class="photo-catalog__list">
+            <li class="photo-catalog__item">
+              <div class="photo-catalog__content">
+                <p class="photo-catalog__user-name">
+                Анна
+                <span class="photo-catalog__post-time">5 минут назад</span>
+                </p>
+                <blockquote class="photo-catalog__user-text">
+                  Прыгать или нет? Напишите в
+                  комментарии свой совет и
+                  смотрите прямую трансляцию в
+                  перископе, задавайте свои вопросы
+                </blockquote>
+                <div class="photo-catalog__like">
+                  <div class="photo-catalog__like-icon">
+                    <img src="img/heart.svg" alt="like icon">
+                  </div>
+                  <p class="photo-catalog__like-text">Нравится: 215</p>
+                </div>
+              </div>
+            </li>
+            <li class="photo-catalog__item">
+              <div class="photo-catalog__image">
+                <img src="img/photo-1-mobile.png" alt="car photo">
+              </div>
+              <div class="photo-catalog__content">
+                <p class="photo-catalog__user-name">
+                  Левон
+                <span class="photo-catalog__post-time">5 часов назад</span>
+                </p>
+                <blockquote class="photo-catalog__user-text">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </blockquote>
+                <div class="photo-catalog__like">
+                  <div class="photo-catalog__like-icon">
+                    <img src="img/heart.svg" alt="like icon">
+                  </div>
+                  <p class="photo-catalog__like-text">Нравится: 365</p>
+                </div>
+              </div>
+            </li>
+            <li class="photo-catalog__item">
+              <div class="photo-catalog__image">
+                <img src="img/photo-2-mobile.png" alt="drum set">
+              </div>
+              <div class="photo-catalog__content">
+                <p class="photo-catalog__user-name">
+                Антон
+                <span class="photo-catalog__post-time">12 часов назад</span>
+                </p>
+                <blockquote class="photo-catalog__user-text">
+                  Соседи будут рады!
+                </blockquote>
+                <div class="photo-catalog__like">
+                  <div class="photo-catalog__like-icon">
+                    <img src="img/heart.svg" alt="like icon">
+                  </div>
+                  <p class="photo-catalog__like-text">Нравится: 666</p>
+                </div>
+              </div>
+            </li>
+            <li class="photo-catalog__item">
+              <div class="photo-catalog__image">
+                <img src="img/photo-3-tablet.png" alt="blue sky">
+              </div>
+              <div class="photo-catalog__content">
+                <p class="photo-catalog__user-name">
+                Борис
+                <span class="photo-catalog__post-time">20 часов назад</span>
+                </p>
+                <blockquote class="photo-catalog__user-text">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </blockquote>
+                <div class="photo-catalog__like">
+                  <div class="photo-catalog__like-icon">
+                    <img src="img/heart.svg" alt="like icon">
+                  </div>
+                  <p class="photo-catalog__like-text">Нравится: 215</p>
+                </div>
+              </div>
+            </li>
+            <li class="photo-catalog__item">
+              <div class="photo-catalog__image">
+                <img src="img/photo-4-tablet.png" alt="kuban melon">
+              </div>
+              <div class="photo-catalog__content">
+                <p class="photo-catalog__user-name">
+                  Сергей
+                <span class="photo-catalog__post-time">25 часов назад</span>
+                </p>
+                <blockquote class="photo-catalog__user-text">
+                  Самая кубанская в мире!
+                </blockquote>
+                <div class="photo-catalog__like">
+                  <div class="photo-catalog__like-icon">
+                    <img src="img/heart.svg" alt="like icon">
+                  </div>
+                  <p class="photo-catalog__like-text">Нравится: 4</p>
+                </div>
+              </div>
+            </li>
+            <li class="photo-catalog__item">
+              <div class="photo-catalog__image">
+                <img src="img/photo-5-tablet.png" alt="mauntains">
+              </div>
+              <div class="photo-catalog__content">
+                <p class="photo-catalog__user-name">
+                  Максим
+                <span class="photo-catalog__post-time">40 часов назад</span>
+                </p>
+                <blockquote class="photo-catalog__user-text">
+                  Где снег-то?
+                </blockquote>
+                <div class="photo-catalog__like">
+                  <div class="photo-catalog__like-icon">
+                    <img src="img/heart.svg" alt="like icon">
+                  </div>
+                  <p class="photo-catalog__like-text">Нравится: 150</p>
+                </div>
+              </div>
+            </li>
+            <li class="photo-catalog__item">
+              <div class="photo-catalog__image">
+                <img src="img/photo-6-tablet.png" alt="plane in the sky">
+              </div>
+              <div class="photo-catalog__content">
+                <p class="photo-catalog__user-name">
+                  Надежда
+                <span class="photo-catalog__post-time">45 часов назад</span>
+                </p>
+                <blockquote class="photo-catalog__user-text">
+                  Всем GM и взаимные лайки!
+                </blockquote>
+                <div class="photo-catalog__like">
+                  <div class="photo-catalog__like-icon">
+                    <img src="img/heart.svg" alt="like icon">
+                  </div>
+                  <p class="photo-catalog__like-text">Нравится: 2560</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <p class="photo-catalog__slogan">Затмите их всех!</p>
+          <p class="photo-catalog__slogan">Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+      </section>
+
+      <section class="add-your-photo">
+        <div class="add-your-photo__wrapper">
+          <h2 class="visually-hidden">Добавь своё фото</h2>
+
+          <div class="add-your-photo__your-image">
+            <img src="img/your-photo.png" id="your-picture" alt="your image">
+          </div>
+          <div class="add-your-photo__tabs">
+            <div class="add-your-photo__tab tab">
+              <input type="radio" id="tab1" name="tab-group" checked>
+              <label for="tab1" class="tab-title">
+                <img src="img/crop.svg" alt="crop icon">
+                Заголовок вкладки
+              </label>
+              <section class="tab-content">
+                Содержимое вкладки
+                <label for="photo-size"></label>
+                <input type="range" min="1" max="10" name="photo-size" id="photo-size" oninput="sizePic()" value="10">
+              </section>
+            </div>
+            <div class="add-your-photo__tab tab">
+              <input type="radio" id="tab3" name="tab-group">
+              <label for="tab2" class="tab-title">
+                <img src="img/fill.svg" alt="fill icon">
+                Заголовок вкладки
+              </label>
+              <section class="tab-content">
+                Содержимое вкладки
+                <label for="color"></label>
+                <input type="range" min="-5" max="5" name="photo-color" id="photo-color" value="0">
+              </section>
+            </div>
+            <div class="add-your-photo__tab tab">
+              <input type="radio" id="tab3" name="tab-group">
+              <label for="tab3" class="tab-title">
+                <img src="img/contrast.svg" alt="contrast icon">
+                Заголовок вкладки
+              </label>
+              <section class="tab-content">
+                Содержимое вкладки
+                <label for="contrast"></label>
+                <input type="range" min="1" max="10" name="photo-contrast" id="photo-contrast" value="5">
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <a href="#" class="button"><span>Запостить</span></a>
+      <a href="#" class="button"><span>Отмена</span></a>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/glasses.svg" alt="glasses logo">
+          <img src="img/pink.svg" alt="pink logo">
+        </div>
+      </div>
+      <div class="page-footer__social">
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a href="https://www.instagram.com/htmlacademy">
+              <img src="img/twitter.svg" alt="twitter icon">
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="https://www.facebook.com/htmlacademy">
+              <img src="img/facebook.svg" alt="facebook icon">
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="https://www.youtube.com/user/htmlacademyru">
+              <img src="img/youtube.svg" alt="youtube icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/html-academy.svg" alt="html academy icon">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

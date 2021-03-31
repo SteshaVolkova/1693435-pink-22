@@ -3,13 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <script>
-      function sizePic() {
-        size = document.getElementById("photo-size").value;
-        img = document.getElementById("your-picture");
-        img.width = 60 + 20*size;
-      }
-    </script>
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -21,7 +14,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a hraf="/index.html">Главная</a>
+              <a href="/index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a>Фотографии</a>
@@ -52,8 +45,6 @@
           <h2 class="visually-hidden">Добавьте своё фото в Pink</h2>
           <p class="look-photos__text">
           Взгляните на фотографии, которые выкладывают пользователи!
-          </p>
-          <p class="look-photos__text">
           Видите, как не хватает ваших?
           </p>
         </div>
@@ -61,10 +52,10 @@
 
       <section class="photo-catalog">
         <h2 class="visually-hidden">Взгляните на фото других пользователей</h2>
-        <div class="photo-catalog__best-panorama">
-          <div class="photo-catalog__panorama-image">
+        <div class="photo-block photo-block__panorama">
+          <a href="#">
             <img src="img/panorama-tablet.png" alt="best panorama">
-          </div>
+          </a>
         </div>
         <div class="photo-catalog__wrapper">
           <ul class="photo-catalog__list">
@@ -81,16 +72,18 @@
                   перископе, задавайте свои вопросы
                 </blockquote>
                 <div class="photo-catalog__like">
-                  <div class="photo-catalog__like-icon">
+                  <button class="photo-catalog__like-icon">
                     <img src="img/heart.svg" alt="like icon">
-                  </div>
+                  </button>
                   <p class="photo-catalog__like-text">Нравится: 215</p>
                 </div>
               </div>
             </li>
             <li class="photo-catalog__item">
-              <div class="photo-catalog__image">
-                <img src="img/photo-1-mobile.png" alt="car photo">
+              <div class="photo-block">
+                <a href="#">
+                  <img src="img/photo-1-mobile.png" alt="car photo">
+                </a>
               </div>
               <div class="photo-catalog__content">
                 <p class="photo-catalog__user-name">
@@ -101,16 +94,18 @@
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </blockquote>
                 <div class="photo-catalog__like">
-                  <div class="photo-catalog__like-icon">
+                  <button class="photo-catalog__like-icon">
                     <img src="img/heart.svg" alt="like icon">
-                  </div>
+                  </button>
                   <p class="photo-catalog__like-text">Нравится: 365</p>
                 </div>
               </div>
             </li>
             <li class="photo-catalog__item">
-              <div class="photo-catalog__image">
-                <img src="img/photo-2-mobile.png" alt="drum set">
+              <div class="photo-block">
+                <a href="#">
+                  <img src="img/photo-2-mobile.png" alt="drum set">
+                </a>
               </div>
               <div class="photo-catalog__content">
                 <p class="photo-catalog__user-name">
@@ -121,16 +116,18 @@
                   Соседи будут рады!
                 </blockquote>
                 <div class="photo-catalog__like">
-                  <div class="photo-catalog__like-icon">
+                  <button class="photo-catalog__like-icon">
                     <img src="img/heart.svg" alt="like icon">
-                  </div>
+                  </button>
                   <p class="photo-catalog__like-text">Нравится: 666</p>
                 </div>
               </div>
             </li>
             <li class="photo-catalog__item">
-              <div class="photo-catalog__image">
-                <img src="img/photo-3-tablet.png" alt="blue sky">
+              <div class="photo-block">
+                <a href="#">
+                  <img src="img/photo-3-tablet.png" alt="blue sky">
+                </a>
               </div>
               <div class="photo-catalog__content">
                 <p class="photo-catalog__user-name">
@@ -141,16 +138,18 @@
                   Здесь могла быть ваша цитата о высоком и вечном.
                 </blockquote>
                 <div class="photo-catalog__like">
-                  <div class="photo-catalog__like-icon">
+                  <button class="photo-catalog__like-icon">
                     <img src="img/heart.svg" alt="like icon">
-                  </div>
+                  </button>
                   <p class="photo-catalog__like-text">Нравится: 215</p>
                 </div>
               </div>
             </li>
             <li class="photo-catalog__item">
-              <div class="photo-catalog__image">
-                <img src="img/photo-4-tablet.png" alt="kuban melon">
+              <div class="photo-block">
+                <a href="#">
+                  <img src="img/photo-4-tablet.png" alt="kuban melon">
+                </a>
               </div>
               <div class="photo-catalog__content">
                 <p class="photo-catalog__user-name">
@@ -161,16 +160,18 @@
                   Самая кубанская в мире!
                 </blockquote>
                 <div class="photo-catalog__like">
-                  <div class="photo-catalog__like-icon">
+                  <button class="photo-catalog__like-icon">
                     <img src="img/heart.svg" alt="like icon">
-                  </div>
+                  </button>
                   <p class="photo-catalog__like-text">Нравится: 4</p>
                 </div>
               </div>
             </li>
             <li class="photo-catalog__item">
-              <div class="photo-catalog__image">
-                <img src="img/photo-5-tablet.png" alt="mauntains">
+              <div class="photo-block">
+                <a href="#">
+                  <img src="img/photo-5-tablet.png" alt="mauntains">
+                </a>
               </div>
               <div class="photo-catalog__content">
                 <p class="photo-catalog__user-name">
@@ -181,16 +182,18 @@
                   Где снег-то?
                 </blockquote>
                 <div class="photo-catalog__like">
-                  <div class="photo-catalog__like-icon">
+                  <button class="photo-catalog__like-icon">
                     <img src="img/heart.svg" alt="like icon">
-                  </div>
+                  </button>
                   <p class="photo-catalog__like-text">Нравится: 150</p>
                 </div>
               </div>
             </li>
             <li class="photo-catalog__item">
-              <div class="photo-catalog__image">
-                <img src="img/photo-6-tablet.png" alt="plane in the sky">
+              <div class="photo-block">
+                <a href="#">
+                  <img src="img/photo-6-tablet.png" alt="plane in the sky">
+                </a>
               </div>
               <div class="photo-catalog__content">
                 <p class="photo-catalog__user-name">
@@ -201,9 +204,9 @@
                   Всем GM и взаимные лайки!
                 </blockquote>
                 <div class="photo-catalog__like">
-                  <div class="photo-catalog__like-icon">
+                  <button class="photo-catalog__like-icon">
                     <img src="img/heart.svg" alt="like icon">
-                  </div>
+                  </button>
                   <p class="photo-catalog__like-text">Нравится: 2560</p>
                 </div>
               </div>
@@ -219,29 +222,29 @@
           <h2 class="visually-hidden">Добавь своё фото</h2>
 
           <div class="add-your-photo__your-image">
-            <img src="img/your-photo.png" id="your-picture" alt="your image">
+            <a href="#">
+              <img src="img/your-photo.png" id="your-picture" alt="your image">
+            </a>
           </div>
           <div class="add-your-photo__tabs">
             <div class="add-your-photo__tab tab">
               <input type="radio" id="tab1" name="tab-group" checked>
               <label for="tab1" class="tab-title">
                 <img src="img/crop.svg" alt="crop icon">
-                Заголовок вкладки
+                Обрезка картинки
               </label>
               <section class="tab-content">
-                Содержимое вкладки
                 <label for="photo-size"></label>
                 <input type="range" min="1" max="10" name="photo-size" id="photo-size" oninput="sizePic()" value="10">
               </section>
             </div>
             <div class="add-your-photo__tab tab">
-              <input type="radio" id="tab3" name="tab-group">
+              <input type="radio" id="tab2" name="tab-group">
               <label for="tab2" class="tab-title">
                 <img src="img/fill.svg" alt="fill icon">
-                Заголовок вкладки
+                Заливка картинки
               </label>
               <section class="tab-content">
-                Содержимое вкладки
                 <label for="color"></label>
                 <input type="range" min="-5" max="5" name="photo-color" id="photo-color" value="0">
               </section>
@@ -250,10 +253,9 @@
               <input type="radio" id="tab3" name="tab-group">
               <label for="tab3" class="tab-title">
                 <img src="img/contrast.svg" alt="contrast icon">
-                Заголовок вкладки
+                Контрастность картинки
               </label>
               <section class="tab-content">
-                Содержимое вкладки
                 <label for="contrast"></label>
                 <input type="range" min="1" max="10" name="photo-contrast" id="photo-contrast" value="5">
               </section>
@@ -263,8 +265,8 @@
       </section>
 
 
-      <a href="#" class="button"><span>Запостить</span></a>
-      <a href="#" class="button"><span>Отмена</span></a>
+      <button href="#" class="button"><span>Запостить</span></button>
+      <button href="#" class="button"><span>Отмена</span></button>
     </main>
 
     <footer class="page-footer">

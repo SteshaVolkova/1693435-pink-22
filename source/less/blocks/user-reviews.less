@@ -1,0 +1,30 @@
+.user-reviews__wrapper {
+  padding: 50px 20px;
+}
+.user-reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.user-reviews__user-name {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.user-reviews__user-description {
+  display: none;
+}
+.user-reviews__user-text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: @dark-border-blue;
+  &:after {
+    content: '»';
+  }
+  &:before {
+    content: '«';
+  }
+}

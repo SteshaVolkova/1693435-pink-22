@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/pink.svg" alt="pink logo">
+        <img src="img/pink-white.svg" alt="pink logo">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть мобильное меню</span></button>
@@ -46,21 +48,22 @@
             </div>
           </div>
           <div class="download-the-app__bottom-side">
-            <a href="https://www.apple.com/ru/app-store/" class="button"><span>Скачать приложение</span></a>
+            <a href="https://www.apple.com/ru/app-store/" class="download-the-app__download-bottom
+              button"><span>Скачать приложение</span></a>
             <ul class="download-the-app__os-list">
               <li class="download-the-app__item-logo">
-                <a href="https://www.apple.com/ru/app-store/" class="button">
-                  <img src="img/apple-logo.svg" width="47" height="56" alt="apple logo">
+                <a href="https://www.apple.com/ru/app-store/">
+                  <img class="download-the-app__img-logo" src="img/apple-logo.svg" alt="apple logo">
                 </a>
               </li>
               <li class="download-the-app__item-logo">
-                <a href="#" class="button">
-                  <img src="img/android-logo.svg" width="43" height="47" alt="android logo">
+                <a href="#">
+                  <img class="download-the-app__img-logo" src="img/android-logo.svg" alt="android logo">
                 </a>
               </li>
               <li class="download-the-app__item-logo">
-                <a href="#" class="button">
-                  <img src="img/microsoft-logo.svg" width="44" height="41" alt="microsoft logo">
+                <a href="#">
+                  <img class="download-the-app__img-logo" src="img/microsoft-logo.svg" alt="microsoft logo">
                 </a>
               </li>
             </ul>
@@ -144,9 +147,9 @@
             </li>
           </ul>
           <p class="user-reviews__toggles slider__toggles">
-          <a href="#user-1" class="slider__toggle slider__toggle--current">1</a>
-          <a href="#user-2" class="slider__toggle">2</a>
-          <a href="#user-3" class="slider__toggle">3</a>
+            <a href="#user-1" class="slider__toggle slider__toggle--current"><span class="visually-hidden">1</span></a>
+            <a href="#user-2" class="slider__toggle"><span class="visually-hidden">2</span></a>
+            <a href="#user-3" class="slider__toggle"><span class="visually-hidden">3</span></a>
           </p>
         </div>
       </section>
@@ -174,54 +177,54 @@
               <td class="price__option-name visually-hidden">Розовый фильтр</td>
               <td class="price__option-value">
                 <span>Розовый фильтр</span>
-                <span class="enable">Yes</span>
+                <span class="price__option-enable"></span>
               </td>
               <td class="price__option-value">
                 <span>Розовый фильтр</span>
-                <span class="enable">Yes</span>
+                <span class="price__option-enable"></span>
               </td>
               <td class="price__option-value">
                 <span>Розовый фильтр</span>
-                <span class="enable">Yes</span>
+                <span class="price__option-enable"></span>
               </td>
             </tr>
             <tr>
               <td class="price__option-name visually-hidden">Смайлики</td>
               <td class="price__option-value">
                 <span>Смайлики</span>
-                <span>No</span>
+                <span class="price__option-disable"></span>
               </td>
               <td class="price__option-value">
                 <span>Смайлики</span>
-                <span class="enable">Yes</span>
+                <span class="price__option-enable"></span>
               </td>
               <td class="price__option-value">
                 <span>Смайлики</span>
-                <span class="enable">Yes</span>
+                <span class="price__option-enable"></span>
               </td>
             </tr>
             <tr>
               <td class="price__option-name visually-hidden">Комментарии</td>
               <td class="price__option-value">
                 <span>Комментарии</span>
-                <span>No</span>
+                <span class="price__option-disable"></span>
               </td>
               <td class="price__option-value">
                 <span>Комментарии</span>
-                <span>No</span>
+                <span class="price__option-disable"></span>
               </td>
               <td class="price__option-value">
                 <span>Комментарии</span>
-                <span class="enable">Yes</span>
+                <span class="price__option-enable"></span>
               </td>
             </tr>
           </table>
 
 
           <p class="price__toggles slider__toggles">
-          <a href="#price-1" class="slider__toggle slider__toggle--current">1</a>
-          <a href="#price-2" class="slider__toggle">2</a>
-          <a href="#price-3" class="slider__toggle">3</a>
+            <a href="#user-1" class="slider__toggle slider__toggle--current"><span class="visually-hidden">1</span></a>
+            <a href="#user-2" class="slider__toggle"><span class="visually-hidden">2</span></a>
+            <a href="#user-3" class="slider__toggle"><span class="visually-hidden">3</span></a>
           </p>
         </div>
       </section>
@@ -234,15 +237,15 @@
           </p>
           <ul class="contact-info__list">
             <li class="contact-info__item">
-              <h3 class="contact-info__title">Звоните</h3>
+              <h3 class="contact-info__item-title">Звоните</h3>
               <a href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
             </li>
             <li class="contact-info__item">
-              <h3 class="contact-info__title">Пишите:</h3>
+              <h3 class="contact-info__item-title">Пишите:</h3>
               <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="contact-info__item">
-              <h3 class="contact-info__title">Приезжайте в гости:</h3>
+              <h3 class="contact-info__item-title">Приезжайте в гости:</h3>
               <a href="https://goo.gl/maps/FFvPNicZ5M7JyyS56">ул. Большая Конюшенная, 19/8</a>
             </li>
           </ul>
@@ -259,34 +262,34 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="img/glasses.svg" alt="glasses logo">
-          <img src="img/pink.svg" alt="pink logo">
+          <img class="page-footer__logo-glasses" src="img/glasses.svg" alt="glasses logo">
+          <img class="page-footer__logo-pink" src="img/pink.svg" alt="pink logo">
         </div>
-      </div>
-      <div class="page-footer__social">
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item">
-            <a href="https://www.instagram.com/htmlacademy">
-              <img src="img/twitter.svg" alt="twitter icon">
-            </a>
-          </li>
-          <li class="page-footer__social-item">
-            <a href="https://www.facebook.com/htmlacademy">
-              <img src="img/facebook.svg" alt="facebook icon">
-            </a>
-          </li>
-          <li class="page-footer__social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru">
-              <img src="img/youtube.svg" alt="youtube icon">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/html-academy.svg" alt="html academy icon">
-        </a>
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a href="https://www.instagram.com/htmlacademy">
+                <img src="img/twitter.svg" alt="twitter icon">
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a href="https://www.facebook.com/htmlacademy">
+                <img src="img/facebook.svg" alt="facebook icon">
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a href="https://www.youtube.com/user/htmlacademyru">
+                <img src="img/youtube.svg" alt="youtube icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/html-academy.svg" alt="html academy icon">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

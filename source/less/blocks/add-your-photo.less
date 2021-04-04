@@ -1,43 +1,47 @@
 .add-your-photo__wrapper {
-	padding: 20px 20px 40px;
-	background-color: @light-gray;
+  padding: 20px 20px 40px;
+  background-color: @light-gray;
 }
 
 .add-your-photo__form-block {
-	margin: 0 15%;
+  margin: 0 15%;
 }
 
 .tabs {
-	position: relative;
+  position: relative;
 }
 
-.tab, .tab-title {
-	display: inline-block;
-}
-
-.tab input[type="radio"] { display: none; }
+.tab,
 .tab-title {
-	padding: 5px 10px;
-	border-bottom: none;
+  display: inline-block;
+}
+
+.tab input[type="radio"] {
+  display: none;
+}
+
+.tab-title {
+  padding: 5px 10px;
+  border-bottom: none;
 }
 
 .tab-content {
-	position: absolute;
-	left: 0;
-	width: calc(100% - 20px);
-	display: none;
+  position: absolute;
+  left: 0;
+  width: calc(100% - 20px);
+  display: none;
 }
 
-.tab :checked + .tab-title {
-	top: 1px;
-	z-index: 1;
+.tab:checked + .tab-title {
+  top: 1px;
+  z-index: 1;
 }
 
-.tab :checked ~ .tab-content {
-	display: block;
-	text-align: center;
+.tab:checked ~ .tab-content {
+  display: block;
+  text-align: center;
 }
 
 .add-your-photo__submit {
-	margin-top: 50px;
+  margin-top: 50px;
 }

@@ -1,0 +1,156 @@
+.add-your-photo__wrapper {
+  padding: 20px 20px 40px;
+  background-color: @light-gray;
+}
+
+.add-your-photo__tabs-block {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 73px;
+  padding-top: 43px;
+  border-bottom: 1px solid @border-lightgray;
+}
+
+.tabs {
+  position: relative;
+}
+
+.tab,
+.tab-title {
+  display: inline-block;
+}
+
+.tab input[type="radio"] {
+  display: none;
+}
+
+.tab-title {
+  padding: 5px 10px;
+  border-bottom: none;
+}
+
+.tab-content {
+  position: absolute;
+  left: 0;
+  display: none;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.tab-content.selected {
+  display: block;
+  text-align: center;
+}
+
+.tab:checked + .tab-title {
+  top: 1px;
+  z-index: 1;
+}
+
+.tab:checked ~ .tab-content {
+  display: block;
+  text-align: center;
+}
+
+.add-your-photo__submit,
+.add-your-photo__cancellation {
+  margin-top: 38px;
+  width: 100%;
+  border-color: @link-color;
+  height: 55px;
+
+  span {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: @link-color;
+  }
+}
+
+.add-your-photo__cancellation {
+  margin-top: 12px;
+  border-color: @dark-border-blue;
+
+  span {
+    color: @dark-border-blue;
+  }
+}
+
+.add-your-photo__image {
+  width: 100%;
+}
+
+input[type="range"] {
+  height: 22px;
+  margin: 10px 0 10px 20px;
+  width: 80%;
+  background-color: transparent;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: @dark-border-blue;
+  border-radius: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  border: 2px solid @link-color;
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  background: @white;
+  cursor: pointer;
+  margin-top: -7px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: @dark-border-blue;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: @dark-border-blue;
+  border-radius: 2px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: 2px solid @link-color;
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  background-color: @white;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: @dark-border-blue;
+  order-radius: 4px;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: @dark-border-blue;
+  border-radius: 4px;
+}
+
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+}

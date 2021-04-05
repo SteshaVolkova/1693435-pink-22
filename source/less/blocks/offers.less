@@ -48,3 +48,45 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: @tablet-screen) {
+  .offers__content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .offers__list {
+    width: 43%;
+    margin-left: 7%;
+  }
+
+  .offers__item {
+    text-align: left;
+  }
+
+  .offers__image {
+    width: 50%;
+
+    img {
+      width: inherit;
+    }
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .offers__image {
+    display: none;
+  }
+
+  .offers__list {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .offers__item {
+    text-align: center;
+    width: 252px;
+  }
+}

@@ -2,11 +2,18 @@
   background-color: @dark-blue;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 23px 20px;
   position: fixed;
   left: 0;
   right: 0;
   opacity: 0.7;
+  z-index: 2;
+}
+
+.page-header__logo {
+  padding: 0;
+  height: 23px;
+  width: 75px;
 }
 
 .main-nav__wrapper {
@@ -15,6 +22,7 @@
 
 .main-nav__toggle {
   background-image: url("../../img/open-menu-btn.svg");
+  background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   border: none;
@@ -22,4 +30,97 @@
   height: 24px;
   width: 50px;
   background-color: transparent;
+}
+
+.page-header.open-menu {
+  opacity: 1;
+  background-color: @dark-border-blue;
+  position: relative;
+  border-bottom: 1px solid @black;
+  height: 69px;
+
+  .main-nav__wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 71px;
+  }
+
+  .main-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .main-nav__item {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: @dark-border-blue;
+    color: white;
+    height: 63px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid @black;
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: @tablet-screen) {
+  .page-header {
+    padding: 27px 20px 43px;
+  }
+
+  .page-header__logo {
+    height: 40px;
+    width: 145px;
+  }
+
+  .main-nav__toggle {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 130px 43px;
+  }
+
+  .main-nav {
+    width: 70%;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+  }
+
+  .main-nav__item a {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: @white;
+    text-decoration: none;
+  }
 }

@@ -3,6 +3,10 @@
   padding: 100px 0;
 }
 
+.price__wrapper .slides {
+  margin: 0 auto;
+}
+
 th.price__title {
   background-color: @dark-border-blue;
   padding: 20px 100px 35px;
@@ -13,6 +17,10 @@ h2.price__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+}
+
+.price__option-name {
+  display: none;
 }
 
 .price__sum {
@@ -40,4 +48,23 @@ h2.price__title {
   height: 40px;
   width: 40px;
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-screen) {
+  .price__transparent-block {
+    display: block;
+  }
+
+  .price__option-name {
+    background-color: @white;
+    display: table-cell;
+  }
+
+  .price__option-value {
+    background-color: @white;
+
+    span:first-child {
+      display: none;
+    }
+  }
 }

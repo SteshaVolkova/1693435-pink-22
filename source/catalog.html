@@ -5,6 +5,8 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -225,43 +227,45 @@
 
         <div class="add-your-photo__your-image">
           <a href="#">
-            <img src="img/your-photo.png" id="your-picture" alt="your image">
+            <img class="add-your-photo__image" src="img/your-photo.png" id="your-picture" alt="your image">
           </a>
         </div>
         <div class="add-your-photo__tabs">
           <form class="add-your-photo__form-block" action="https://www.google.com/search?q=htmlacademy" method="post">
-            <div class="add-your-photo__tab tab">
-              <input class="add-your-photo__input" type="radio" id="tab1" name="tab-group" checked>
-              <label for="tab1" class="tab-title">
-                <img src="img/crop.svg" alt="crop icon">
-                <span class="visually-hidden">Обрезка картинки</span>
-              </label>
-              <section class="tab-content">
-                <label for="photo-size"></label>
-                <input type="range" min="1" max="10" name="photo-size" id="photo-size" oninput="sizePic()" value="10">
-              </section>
-            </div>
-            <div class="add-your-photo__tab tab">
-              <input class="add-your-photo__input" type="radio" id="tab2" name="tab-group">
-              <label for="tab2" class="tab-title">
-                <img src="img/fill.svg" alt="fill icon">
-                <span class="visually-hidden">Заливка картинки</span>
-              </label>
-              <section class="tab-content">
-                <label for="color"></label>
-                <input type="range" min="-5" max="5" name="photo-color" id="photo-color" value="0">
-              </section>
-            </div>
-            <div class="add-your-photo__tab tab">
-              <input class="add-your-photo__input" type="radio" id="tab3" name="tab-group">
-              <label for="tab3" class="tab-title">
-                <img src="img/contrast.svg" alt="contrast icon">
-                <span class="visually-hidden">Контрастность картинки</span>
-              </label>
-              <section class="tab-content">
-                <label for="contrast"></label>
-                <input type="range" min="1" max="10" name="photo-contrast" id="photo-contrast" value="5">
-              </section>
+            <div class="add-your-photo__tabs-block">
+              <div class="add-your-photo__tab tab">
+                <input class="add-your-photo__input" type="radio" id="tab1" name="tab-group" checked>
+                <label for="tab1" class="tab-title selected">
+                  <img src="img/crop.svg" alt="crop icon">
+                  <span class="visually-hidden">Обрезка картинки</span>
+                </label>
+                <section class="tab-content selected">
+                  <label for="photo-size"></label>
+                  <input type="range" min="1" max="10" name="photo-size" id="photo-size" oninput="sizePic()" value="10">
+                </section>
+              </div>
+              <div class="add-your-photo__tab tab">
+                <input class="add-your-photo__input" type="radio" id="tab2" name="tab-group">
+                <label for="tab2" class="tab-title">
+                  <img src="img/fill.svg" alt="fill icon">
+                  <span class="visually-hidden">Заливка картинки</span>
+                </label>
+                <section class="tab-content">
+                  <label for="color"></label>
+                  <input type="range" min="-5" max="5" name="photo-color" id="photo-color" value="0">
+                </section>
+              </div>
+              <div class="add-your-photo__tab tab">
+                <input class="add-your-photo__input" type="radio" id="tab3" name="tab-group">
+                <label for="tab3" class="tab-title">
+                  <img src="img/contrast.svg" alt="contrast icon">
+                  <span class="visually-hidden">Контрастность картинки</span>
+                </label>
+                <section class="tab-content">
+                  <label for="contrast"></label>
+                  <input type="range" min="1" max="10" name="photo-contrast" id="photo-contrast" value="5">
+                </section>
+              </div>
             </div>
 
             <button href="#" class="add-your-photo__submit button"><span>Запостить</span></button>

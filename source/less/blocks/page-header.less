@@ -10,6 +10,12 @@
   z-index: 2;
 }
 
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .page-header__logo {
   padding: 0;
   height: 23px;
@@ -93,7 +99,13 @@
   .page-header {
     display: flex;
     justify-content: space-between;
-    padding: 27px 130px 43px;
+    padding: 27px 0 43px;
+  }
+
+  .page-header__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .main-nav {

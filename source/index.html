@@ -10,38 +10,40 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <picture>
+      <div class="page-header__container container">
+        <a class="page-header__logo">
+          <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg"/>
-          <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg"/>
-          <img src="img/pink-white.svg" alt="" />
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть мобильное меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a>Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="/photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="/form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">Html academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg"/>
+              <img src="img/pink-white.svg" alt="" />
+          </picture>
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть мобильное меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a>Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="/photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="/form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Html academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
     <section class="download-the-app">
       <h1 class="visually-hidden">Раскрась свою жизнь с помощью Pink!</h1>
-      <div class="download-the-app__wrapper">
+      <div class="download-the-app__wrapper container">
         <header class="download-the-app">
           <h2 class="visually-hidden">Ссылки на скачивание приложения.</h2>
         </header>
@@ -51,7 +53,7 @@
           </p>
           <div class="download-the-app__image">
             <picture>
-              <source media="(min-width: 660px)" srcset="img/phone-hand-tablet.png"/>
+            <source media="(min-width: 660px)" srcset="img/phone-hand-tablet.png"/>
               <img src="img/phone-hand.png" alt="phone in hand">
             </picture>
           </div>
@@ -84,7 +86,7 @@
     <section class="offers">
       <div class="offers__wrapper">
         <h2 class="visually-hidden">Предложения от Pink!</h2>
-        <header class="offers__header">
+        <header class="offers__header container">
           <p class="offers__slogan">
           Устали от серости мегаполиса?
           </p>
@@ -93,7 +95,7 @@
           </p>
         </header>
         <div class="offers__content">
-          <ul class="offers__list">
+          <ul class="offers__list container">
             <li class="offers__item offer">
               <p class="offers__item-title">
               Поднимает настроение
@@ -127,7 +129,7 @@
     </section>
 
     <section class="timer">
-      <div class="timer__wrapper">
+      <div class="timer__wrapper container">
         <h2 class="visually-hidden">Новость от учёных</h2>
         <a class="timer__image">
           <img src="img/timer.png" alt="timer">
@@ -143,7 +145,7 @@
     </section>
 
     <section class="user-reviews">
-      <div class="user-reviews__wrapper slider">
+      <div class="user-reviews__wrapper slider container">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <ul class="user-reviews__list slider__list">
           <li class="user-reviews__item slider__item" id="user-1">
@@ -180,7 +182,7 @@
     </section>
 
     <section class="price">
-      <div class="price__wrapper slider">
+      <div class="price__wrapper slider container">
         <h2 class="visually-hidden">Тарифы приложения.</h2>
         <table class="slides">
           <tr>
@@ -255,7 +257,7 @@
     </section>
 
     <section class="contact-info">
-      <address class="contact-info__wrapper">
+      <address class="contact-info__wrapper container">
         <h2 class="visually-hidden">Контактная информация для связи</h2>
         <p class="contact-info__title">Остались вопросы?<br>
         Свяжитесь с нами!
@@ -285,10 +287,10 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop.svg"/>
+          <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop.svg"/>
             <img src="img/logotype-blue-tablet.svg" alt="" />
           </picture>
         </div>

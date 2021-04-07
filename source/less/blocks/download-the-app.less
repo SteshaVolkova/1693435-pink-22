@@ -1,4 +1,4 @@
-.download-the-app__top-side {
+.download-the-app {
   background-image: url("../../img/back-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,7 +82,7 @@
   }
 
   .download-the-app__top-side {
-    padding-top: 180px;
+    padding-top: 110px;
   }
 
   .download-the-app__slogan {
@@ -93,5 +93,17 @@
     font-size: 40px;
     font-weight: 300;
     line-height: 120%;
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .download-the-app__image {
+    img {
+      margin-right: 0;
+    }
+  }
+
+  .download-the-app__bottom-side {
+    width: 30%;
   }
 }

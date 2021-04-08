@@ -41,3 +41,66 @@ input[placeholder] {
   font-size: 18px;
   font-weight: 700;
 }
+
+@media (min-width: @tablet-screen) {
+  .form-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personal-information {
+    order: 1;
+  }
+
+  .selection-os {
+    order: 2;
+  }
+
+  .contact-details {
+    order: 3;
+  }
+
+  .travel-achievements {
+    order: 4;
+  }
+
+  .user-emotions {
+    order: 5;
+  }
+
+  .form-button-info {
+    order: 6;
+  }
+
+  .personal-information__input {
+    flex-direction: row;
+  }
+
+  .contact-details__input {
+    flex-direction: column-reverse;
+  }
+
+  .label-title {
+    padding: 35px 20px 0 0;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .form-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 69px 74px;
+  }
+
+  .contact-details,
+  .travel-achievements,
+  .user-emotions,
+  .form-button-info {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}

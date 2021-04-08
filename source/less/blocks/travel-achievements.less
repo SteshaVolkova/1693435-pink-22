@@ -12,3 +12,36 @@
   text-align: center;
   padding-bottom: 44px;
 }
+
+@media (min-width: @tablet-screen) {
+  .travel-achievements__headline.visually-hidden {
+    display: block;
+    padding: 0 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .travel-achievements__headline {
+    display: none;
+  }
+
+  .travel-achievements__wrapper {
+    border: 2px solid @border-lightgray;
+    border-radius: 1px;
+    background-color: @white;
+    margin: 51px 22px 0;
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .travel-achievements__wrapper {
+    padding: 54px 40px;
+  }
+
+  .travel-achievements__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px 15px;
+  }
+}

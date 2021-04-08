@@ -2,3 +2,68 @@
   padding: 42px 22px 15px;
   border: none;
 }
+
+.comtact-details__legend {
+  display: none;
+}
+
+@media (min-width: @tablet-screen) {
+  .comtact-details__legend {
+    display: block;
+    padding: 0 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: @link-color;
+    text-align: center;
+  }
+
+  .contact-details__wrapper {
+    border: 2px solid @border-lightgray;
+    border-radius: 1px;
+    background-color: @white;
+    margin: 51px 22px 0;
+  }
+
+  .contact-details__input {
+    .label-title {
+      padding: 22px 17px 41px;
+      font-weight: 400;
+    }
+
+    input[type="tel"],
+    input[type="email"] {
+      margin: 0;
+    }
+
+    input[type="tel"] {
+      background-image: url("../../img/phone-input.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    input[type="email"] {
+      background-image: url("../../img/mail-input.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .contact-details__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 44px 60px 0;
+  }
+
+  .contact-details__input {
+    width: 45%;
+
+    .label-title {
+      padding: 22px 17px;
+    }
+  }
+
+}

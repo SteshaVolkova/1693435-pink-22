@@ -4,9 +4,11 @@
 @import "blocks/page-header.less";
 @import "blocks/download-the-app.less";
 @import "blocks/offers.less";
+@import "blocks/timer.less";
 @import "blocks/user-reviews.less";
 @import "blocks/price.less";
 @import "blocks/contact-info.less";
+@import "blocks/map.less";
 @import "blocks/page-footer.less";
 @import "blocks/buttons.less";
 @import "blocks/tender-offer.less";
@@ -22,6 +24,14 @@
 @import "blocks/photo-catalog.less";
 @import "blocks/add-your-photo.less";
 
+//Media scrreens -----------------------
+
+@tablet-screen: 660px;
+@desktop-screen: 1200px;
+@only-mobile-screen: 659px;
+
+//
+
 body {
   margin: 0;
 }
@@ -33,6 +43,7 @@ body {
 p,
 b,
 a,
+td,
 span,
 small,
 blockquote,
@@ -43,4 +54,11 @@ h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0;
+}
+
+@media (min-width: @desktop-screen) {
+  .container {
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }

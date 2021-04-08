@@ -10,34 +10,40 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/pink-white.svg" alt="pink logo">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть мобильное меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a>Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="/photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="/form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">Html academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__container container">
+        <a class="page-header__logo">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg"/>
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg"/>
+              <img src="img/pink-white.svg" alt="" />
+          </picture>
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть мобильное меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a>Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="/photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="/form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Html academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
     <section class="download-the-app">
       <h1 class="visually-hidden">Раскрась свою жизнь с помощью Pink!</h1>
-      <div class="download-the-app__wrapper">
+      <div class="download-the-app__wrapper container">
         <header class="download-the-app">
           <h2 class="visually-hidden">Ссылки на скачивание приложения.</h2>
         </header>
@@ -46,7 +52,10 @@
           Взгляните на жизнь иначе!
           </p>
           <div class="download-the-app__image">
-            <img src="img/phone-hand.png" alt="phone in hand">
+            <picture>
+            <source media="(min-width: 660px)" srcset="img/phone-hand-tablet.png"/>
+              <img src="img/phone-hand.png" alt="phone in hand">
+            </picture>
           </div>
         </div>
         <div class="download-the-app__bottom-side">
@@ -77,7 +86,7 @@
     <section class="offers">
       <div class="offers__wrapper">
         <h2 class="visually-hidden">Предложения от Pink!</h2>
-        <header class="offers__header">
+        <header class="offers__header container">
           <p class="offers__slogan">
           Устали от серости мегаполиса?
           </p>
@@ -86,7 +95,7 @@
           </p>
         </header>
         <div class="offers__content">
-          <ul class="offers__list">
+          <ul class="offers__list container">
             <li class="offers__item offer">
               <p class="offers__item-title">
               Поднимает настроение
@@ -119,8 +128,24 @@
       </div>
     </section>
 
+    <section class="timer">
+      <div class="timer__wrapper container">
+        <h2 class="visually-hidden">Новость от учёных</h2>
+        <a class="timer__image">
+          <img src="img/timer.png" alt="timer">
+        </a>
+        <div class="timer__scientist-record">
+          <h3 class="timer__title">Эффект</h3><h3 class="timer__title"> на 24 часа!</h3>
+          <p class="timer__scientist-thing">Британские ученые провели исследования
+          и доказали, что положительный эффект
+          от использования приложения длится целые сутки!</p>
+          <a href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
+    </section>
+
     <section class="user-reviews">
-      <div class="user-reviews__wrapper slider">
+      <div class="user-reviews__wrapper slider container">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <ul class="user-reviews__list slider__list">
           <li class="user-reviews__item slider__item" id="user-1">
@@ -157,11 +182,11 @@
     </section>
 
     <section class="price">
-      <div class="price__wrapper slider">
+      <div class="price__wrapper slider container">
         <h2 class="visually-hidden">Тарифы приложения.</h2>
         <table class="slides">
           <tr>
-            <th class="price__transparent-block">1</th>
+            <th class="price__transparent-block"></th>
             <th class="price__title" id="price-1">
               <h2 class="price__title">База</h2>
               <p class="price__sum">1,99 USD</p>
@@ -176,7 +201,7 @@
             </th>
           </tr>
           <tr>
-            <td class="price__option-name visually-hidden">Розовый фильтр</td>
+            <td class="price__option-name">Розовый фильтр</td>
             <td class="price__option-value">
               <span>Розовый фильтр</span>
               <span class="price__option-enable"></span>
@@ -191,7 +216,7 @@
             </td>
           </tr>
           <tr>
-            <td class="price__option-name visually-hidden">Смайлики</td>
+            <td class="price__option-name">Смайлики</td>
             <td class="price__option-value">
               <span>Смайлики</span>
               <span class="price__option-disable"></span>
@@ -206,7 +231,7 @@
             </td>
           </tr>
           <tr>
-            <td class="price__option-name visually-hidden">Комментарии</td>
+            <td class="price__option-name">Комментарии</td>
             <td class="price__option-value">
               <span>Комментарии</span>
               <span class="price__option-disable"></span>
@@ -232,7 +257,7 @@
     </section>
 
     <section class="contact-info">
-      <address class="contact-info__wrapper">
+      <address class="contact-info__wrapper container">
         <h2 class="visually-hidden">Контактная информация для связи</h2>
         <p class="contact-info__title">Остались вопросы?<br>
         Свяжитесь с нами!
@@ -256,16 +281,18 @@
 
     <section class="map">
       <div class="map__image">
-        <img src="img/map.png" alt="map">
+        <img src="img/map2.png" alt="map">
       </div>
     </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
-          <img class="page-footer__logo-glasses" src="img/glasses.svg" alt="glasses logo">
-          <img class="page-footer__logo-pink" src="img/pink.svg" alt="pink logo">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop.svg"/>
+            <img src="img/logotype-blue-tablet.svg" alt="" />
+          </picture>
         </div>
         <div class="page-footer__social">
           <ul class="page-footer__social-list">

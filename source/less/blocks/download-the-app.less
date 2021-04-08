@@ -1,4 +1,4 @@
-.download-the-app__top-side {
+.download-the-app {
   background-image: url("../../img/back-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,4 +59,51 @@
   color: @white;
   text-align: center;
   padding: 0 20px;
+}
+
+@media (min-width: @tablet-screen) {
+  .download-the-app__image {
+    img {
+      max-height: 645px;
+      width: auto;
+      margin-right: 60px;
+    }
+  }
+
+  .download-the-app__wrapper {
+    position: relative;
+  }
+
+  .download-the-app__bottom-side {
+    position: absolute;
+    bottom: 80px;
+    width: 50%;
+    background-color: transparent;
+  }
+
+  .download-the-app__top-side {
+    padding-top: 110px;
+  }
+
+  .download-the-app__slogan {
+    padding: 20px;
+    position: absolute;
+    top: 180px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 120%;
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .download-the-app__image {
+    img {
+      margin-right: 0;
+    }
+  }
+
+  .download-the-app__bottom-side {
+    width: 30%;
+  }
 }

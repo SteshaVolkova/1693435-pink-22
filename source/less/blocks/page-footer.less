@@ -44,3 +44,24 @@
   line-height: 18px;
   padding: 10px;
 }
+
+@media (min-width: @tablet-screen) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__social-list {
+    padding: 0;
+  }
+
+  .page-footer__social-item {
+    margin: 0 7px;
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .page-footer__wrapper {
+    padding: 70px 0 80px;
+  }
+}

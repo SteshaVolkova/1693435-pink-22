@@ -34,3 +34,56 @@
     content: "«";
   }
 }
+
+@media (min-width: @tablet-screen) {
+  .user-reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-reviews__user-text {
+    order: 1;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-bottom: 50px;
+  }
+
+  .user-reviews__user-name {
+    order: 2;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-bottom: 17px;
+  }
+
+  .user-reviews__user-description {
+    display: block;
+    text-align: center;
+    order: 3;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .user-reviews__wrapper {
+    padding: 50px 130px;
+  }
+
+  .user-reviews__user-name {
+    font-size: 24px;
+  }
+
+  .user-reviews__user-description {
+    font-size: 18px;
+  }
+
+  .user-reviews__item {
+    background-image: url("../../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 130px;
+  }
+}

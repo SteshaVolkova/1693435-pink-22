@@ -10,3 +10,25 @@
 .information-note-for-forms__red-star {
   color: @link-color;
 }
+
+@media (min-width: @tablet-screen) {
+  .form-button-info {
+    margin: 70px 20px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .form-submit-button {
+      margin: 0;
+    }
+  }
+
+  .information-note-for-forms {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .form-button-info {
+    width: 100%;
+  }
+}

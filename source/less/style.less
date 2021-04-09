@@ -32,7 +32,14 @@
 
 //
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -48,6 +55,7 @@ span,
 small,
 blockquote,
 label,
+legend,
 h1,
 h2,
 h3 {

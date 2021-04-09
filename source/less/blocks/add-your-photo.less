@@ -81,10 +81,10 @@
 }
 
 input[type="range"] {
-  height: 22px;
-  margin: 10px 0 10px 20px;
   width: 80%;
+  margin: 10px 0 10px 20px;
   background-color: transparent;
+  appearance: none;
 }
 
 input[type="range"]:focus {
@@ -92,22 +92,23 @@ input[type="range"]:focus {
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
+  background: @dark-border-blue;
+  border: 0.2px solid #010101;
+  border-radius: 2px;
   width: 100%;
   height: 2px;
   cursor: pointer;
-  animate: 0.2s;
-  background: @dark-border-blue;
-  border-radius: 2px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  border: 2px solid @link-color;
+  margin-top: -7px;
   height: 14px;
   width: 14px;
-  border-radius: 14px;
   background: @white;
+  border: 2px solid @link-color;
+  border-radius: 14px;
   cursor: pointer;
-  margin-top: -7px;
+  appearance: none;
 }
 
 input[type="range"]:focus::-webkit-slider-runnable-track {
@@ -118,7 +119,6 @@ input[type="range"]::-moz-range-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
-  animate: 0.2s;
   background: @dark-border-blue;
   border-radius: 2px;
 }
@@ -153,4 +153,85 @@ input[type="range"]::-ms-fill-upper {
 
 input[type="range"]::-ms-thumb {
   margin-top: 1px;
+}
+
+@media (min-width: @tablet-screen) {
+  .add-your-photo__tabs {
+    position: relative;
+  }
+
+  .add-your-photo__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 57px 20px 54px;
+  }
+
+  .add-your-photo__tabs-block {
+    display: block;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  .add-your-photo__tab {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid @border-lightgray;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .tab-content {
+    display: block;
+    text-align: center;
+    position: static;
+  }
+
+  .tab-title {
+    height: 24px;
+    width: 22px;
+    margin: 10px 0;
+    padding: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .add-your-photo__wrapper {
+    padding: 57px 60px;
+  }
+
+  .add-your-photo__wrapper {
+    grid-gap: 90px;
+  }
+
+  .add-your-photo__tab {
+    padding: 13px 0;
+  }
+
+  .add-your-photo__tabs-block {
+    padding-bottom: 160px;
+  }
+
+  .add-your-photo__buttons {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 44px;
+  }
+
+  .add-your-photo__submit,
+  .add-your-photo__cancellation {
+    margin-top: 0;
+  }
+
+  .tab-title {
+    height: 44px;
+    width: 44px;
+  }
 }

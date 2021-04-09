@@ -32,7 +32,14 @@
 
 //
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -62,14 +69,4 @@ h3 {
     max-width: 940px;
     margin: 0 auto;
   }
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-body {
-  box-sizing: border-box;
 }

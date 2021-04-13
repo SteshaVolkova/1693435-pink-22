@@ -38,18 +38,25 @@
   background-color: transparent;
 }
 
-.page-header.open-menu {
+.page-header.main-nav--nojs,
+.page-header.main-nav--opened {
   opacity: 1;
   background-color: @dark-border-blue;
   position: relative;
   border-bottom: 1px solid @black;
   height: 69px;
 
+  .main-nav__toggle {
+    background-image: url("../../img/close-menu-btn.svg");
+    background-size: auto;
+  }
+
   .main-nav__wrapper {
+    display: block;
     position: absolute;
     left: 0;
     right: 0;
-    top: 71px;
+    top: 69px;
   }
 
   .main-nav__list {
@@ -77,6 +84,10 @@
     padding: 20px;
     display: block;
     text-decoration: none;
+  }
+
+  .page-header__logo {
+    padding: 0;
   }
 }
 

@@ -1,6 +1,7 @@
-@import "slider.less";
+@import "normalize.less";
 @import "colors.less";
-@import "checkbox.less";
+@import "blocks/checkbox.less";
+@import "blocks/slider.less";
 @import "blocks/page-header.less";
 @import "blocks/download-the-app.less";
 @import "blocks/offers.less";
@@ -44,7 +45,8 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 p,
@@ -62,6 +64,10 @@ h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0;
+}
+
+.page-main.main-nav--nojs {
+  padding-top: 132px;
 }
 
 @media (min-width: @desktop-screen) {

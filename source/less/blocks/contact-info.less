@@ -1,3 +1,8 @@
+.contact-info {
+  background-color: @white;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+}
+
 .contact-info__wrapper {
   padding: 47px 40px 72px;
 }
@@ -38,6 +43,11 @@
 }
 
 @media (min-width: @tablet-screen) {
+  .contact-info {
+    padding-bottom: 100px;
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%);
+  }
+
   .contact-info__wrapper {
     padding: 50px 76px;
   }

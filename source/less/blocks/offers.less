@@ -5,7 +5,18 @@
 .offers__header {
   padding: 45px 0 40px;
   background-color: @white;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative;
+}
+
+.offers__header::after {
+  content: "";
+  display: block;
+  background-color: @white;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+  height: 50px;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
 }
 
 .offers__slogan {

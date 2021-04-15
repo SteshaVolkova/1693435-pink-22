@@ -1,7 +1,10 @@
 .selection-os__wrapper {
-  padding: 42px 22px 4px;
   border: none;
   background-color: @light-gray;
+
+  &.container {
+    padding: 42px 22px 4px;
+  }
 }
 
 .selection-os__headign {
@@ -52,6 +55,8 @@
 
 @media (min-width: @tablet-screen) {
   .selection-os__headign.visually-hidden {
+    position: static;
+    opacity: 1;
     display: block;
     padding: 0 20px;
     font-weight: normal;
@@ -67,6 +72,5 @@
     border: 2px solid @border-lightgray;
     border-radius: 1px;
     background-color: @white;
-    margin: 0 22px;
   }
 }

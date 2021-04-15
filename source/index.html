@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header main-nav--closed main-nav--nojs">
       <div class="page-header__container container">
-        <a class="page-header__logo">
+        <a href="/" class="page-header__logo">
           <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg"/>
             <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg"/>
@@ -26,13 +26,13 @@
                 <a>Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="/photo.html">Фотографии</a>
+                <a href="/catalog.html">Фотографии</a>
               </li>
               <li class="main-nav__item">
                 <a href="/form.html">Конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">Html academy</a>
+                <a href="https://htmlacademy.ru/study">Html academy</a>
               </li>
             </ul>
           </div>
@@ -40,7 +40,7 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main main-nav--nojs">
     <section class="download-the-app">
       <h1 class="visually-hidden">Раскрась свою жизнь с помощью Pink!</h1>
       <div class="download-the-app__wrapper container">
@@ -86,7 +86,7 @@
     <section class="offers">
       <div class="offers__wrapper">
         <h2 class="visually-hidden">Предложения от Pink!</h2>
-        <header class="offers__header container">
+        <header class="offers__header">
           <p class="offers__slogan">
           Устали от серости мегаполиса?
           </p>
@@ -145,39 +145,37 @@
     </section>
 
     <section class="user-reviews">
+      <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="user-reviews__wrapper slider container">
-        <h2 class="visually-hidden">Отзывы пользователей</h2>
-        <ul class="user-reviews__list slider__list">
-          <li class="user-reviews__item slider__item" id="user-1">
+        <div class="slides">
+          <div class="user-reviews__item slider__item" id="user-1">
             <h3 class="user-reviews__user-name">Николай Петров</h3>
             <p class="user-reviews__user-description">25 лет, водитель трамвая</p>
             <blockquote class="user-reviews__user-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть
               на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
               фотографии!
             </blockquote>
-          </li>
-          <li class="user-reviews__item slider__item" id="user-2">
+          </div>
+          <div class="user-reviews__item slider__item" id="user-2">
             <h3 class="user-reviews__user-name">Николай Петров</h3>
             <p class="user-reviews__user-description">25 лет, водитель трамвая</p>
             <blockquote class="user-reviews__user-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть
               на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
               фотографии!
             </blockquote>
-          </li>
-          <li class="user-reviews__item slider__item" id="user-3">
+          </div>
+          <div class="user-reviews__item slider__item" id="user-3">
             <h3 class="user-reviews__user-name">Николай Петров</h3>
             <p class="user-reviews__user-description">25 лет, водитель трамвая</p>
             <blockquote class="user-reviews__user-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть
               на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
               фотографии!
             </blockquote>
-          </li>
-        </ul>
-        <p class="user-reviews__toggles slider__toggles">
+          </div>
+        </div>
         <a href="#user-1" class="slider__toggle slider__toggle--current"><span class="visually-hidden">1</span></a>
         <a href="#user-2" class="slider__toggle"><span class="visually-hidden">2</span></a>
         <a href="#user-3" class="slider__toggle"><span class="visually-hidden">3</span></a>
-        </p>
       </div>
     </section>
 
@@ -321,5 +319,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/app.js" type="text/javascript"></script>
+
   </body>
 </html>

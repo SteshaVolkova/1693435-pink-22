@@ -38,18 +38,24 @@
   background-color: transparent;
 }
 
-.page-header.open-menu {
+.page-header.main-nav--nojs,
+.page-header.main-nav--opened {
   opacity: 1;
   background-color: @dark-border-blue;
-  position: relative;
   border-bottom: 1px solid @black;
   height: 69px;
 
+  .main-nav__toggle {
+    background-image: url("../../img/close-menu-btn.svg");
+    background-size: auto;
+  }
+
   .main-nav__wrapper {
+    display: block;
     position: absolute;
     left: 0;
     right: 0;
-    top: 71px;
+    top: 69px;
   }
 
   .main-nav__list {
@@ -78,6 +84,10 @@
     display: block;
     text-decoration: none;
   }
+
+  .page-header__logo {
+    padding: 0;
+  }
 }
 
 @media (min-width: @tablet-screen) {
@@ -93,46 +103,75 @@
   .main-nav__toggle {
     margin-top: 10px;
   }
+
+  .page-header.main-nav--nojs,
+  .page-header.main-nav--opened {
+    height: 101px;
+
+    .main-nav__wrapper {
+      top: 101px;
+    }
+  }
 }
 
 @media (min-width: @desktop-screen) {
-  .page-header {
+  .page-header,
+  .page-header.main-nav--opened.main-nav--nojs {
+    padding: 27px 0 30px;
+    background-color: @dark-blue;
     display: flex;
     justify-content: space-between;
-    padding: 27px 0 43px;
-  }
+    position: fixed;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    z-index: 2;
+    border: none;
+    height: 111px;
 
-  .page-header__container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
+    .page-header__container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
 
-  .main-nav {
-    width: 70%;
-  }
+    .main-nav {
+      width: 70%;
+    }
 
-  .main-nav__toggle {
-    display: none;
-  }
+    .main-nav__toggle {
+      display: none;
+    }
 
-  .main-nav__wrapper {
-    display: block;
-  }
+    .main-nav__wrapper {
+      display: block;
+      position: static;
+    }
 
-  .main-nav__list {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 100%;
-  }
+    .main-nav__list {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      width: 100%;
+      margin: 15px 0;
+    }
 
-  .main-nav__item a {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 400;
-    color: @white;
-    text-decoration: none;
+    .main-nav__item {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    .main-nav__item a {
+      text-transform: unset;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 400;
+      color: @white;
+      text-decoration: none;
+      padding: 5px 0 0;
+      display: block;
+    }
   }
 }

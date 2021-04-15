@@ -7,12 +7,17 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js"></script>
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header main-nav--opened main-nav--nojs">
       <div class="page-header__container container">
-        <a class="page-header__logo">
-          <img src="img/pink-white.svg" alt="pink logo">
+        <a href="/" class="page-header__logo">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg"/>
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg"/>
+              <img src="img/pink-white.svg" alt="" />
+          </picture>
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть мобильное меню</span></button>
@@ -22,13 +27,13 @@
                 <a href="/index.html">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="/photo.html">Фотографии</a>
+                <a href="/catalog.html">Фотографии</a>
               </li>
               <li class="main-nav__item">
                 <a>Конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">Html academy</a>
+                <a href="https://htmlacademy.ru/study">Html academy</a>
               </li>
             </ul>
           </div>
@@ -36,7 +41,7 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main main-nav--nojs">
     <section class="tender-offer">
       <div class="tender-offer__wrapper container">
         <h1 class="visually-hidden">Путешествуй, фотографируй и получай призы!</h1>

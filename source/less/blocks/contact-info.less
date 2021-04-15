@@ -1,5 +1,21 @@
+.contact-info {
+  background-color: @white;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: @white;
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 50% 100%, 0 0);
+    height: 50px;
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+  }
+}
+
 .contact-info__wrapper {
-  padding: 47px 40px 72px;
+  padding: 47px 40px 0;
 }
 
 .contact-info__title {
@@ -38,6 +54,11 @@
 }
 
 @media (min-width: @tablet-screen) {
+  .contact-info::after {
+    height: 90px;
+    bottom: -90px;
+  }
+
   .contact-info__wrapper {
     padding: 50px 76px;
   }

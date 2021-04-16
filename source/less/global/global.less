@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans Light", "Helvetica", "Arial", sans-serif;
+}
+
+
+p,
+b,
+a,
+td,
+span,
+small,
+blockquote,
+label,
+legend,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.page-main.main-nav--nojs {
+  padding-top: 132px;
+}
+
+@media (min-width: @desktop-screen) {
+  .page-main.main-nav--nojs {
+    padding-top: 0;
+  }
+}

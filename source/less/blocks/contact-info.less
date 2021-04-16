@@ -1,6 +1,7 @@
 .contact-info {
   background-color: @white;
   position: relative;
+  padding: 47px 0;
 
   &::after {
     content: "";
@@ -9,13 +10,10 @@
     clip-path: polygon(0 0, 100% 0%, 100% 0, 50% 100%, 0 0);
     height: 50px;
     position: absolute;
-    bottom: -50px;
+    bottom: -49px;
+    left: 0;
     width: 100%;
   }
-}
-
-.contact-info__wrapper {
-  padding: 47px 40px 0;
 }
 
 .contact-info__title {
@@ -56,11 +54,11 @@
 @media (min-width: @tablet-screen) {
   .contact-info::after {
     height: 90px;
-    bottom: -90px;
+    bottom: -89px;
   }
 
-  .contact-info__wrapper {
-    padding: 50px 76px;
+  .contact-info {
+    padding: 50px 56px;
   }
 
   .contact-info__title {

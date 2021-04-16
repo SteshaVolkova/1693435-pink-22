@@ -3,13 +3,37 @@
   padding: 100px 0;
 }
 
+.price__wrapper.container {
+  padding: 0;
+}
+
 .price__wrapper .slides {
   margin: 0 auto;
 }
 
 th.price__title {
   background-color: @dark-border-blue;
-  padding: 15px;
+  padding: 15px 0;
+}
+
+.hit-price {
+  overflow: hidden;
+}
+
+.hit-price::before {
+  content: "ХИТ";
+  display: block;
+  color: white;
+  background-color: @link-color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  transform: rotate(318deg);
+  position: absolute;
+  width: 120px;
+  top: 10px;
+  left: -30px;
 }
 
 h2.price__title {
@@ -21,6 +45,18 @@ h2.price__title {
 
 .price__option-name {
   display: none;
+}
+
+.price__option-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: @white;
+
+  span {
+    padding-top: 5px;
+    text-transform: uppercase;
+  }
 }
 
 .price__sum {
@@ -51,6 +87,24 @@ h2.price__title {
 }
 
 @media (min-width: @tablet-screen) {
+  .price__wrapper.container {
+    padding: 0 20px;
+
+    .slider__toggles {
+      display: none;
+    }
+  }
+
+  .price__title,
+  .price__option-content,
+  .price__option-name {
+    width: 155px;
+  }
+
+  .price__wrapper.slider {
+    width: 100%;
+  }
+
   .price__transparent-block {
     display: block;
   }

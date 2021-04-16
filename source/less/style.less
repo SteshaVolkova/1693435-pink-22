@@ -1,5 +1,5 @@
-@import "normalize.less";
-@import "colors.less";
+//Blocks styles -----------------------
+
 @import "blocks/checkbox.less";
 @import "blocks/slider.less";
 @import "blocks/page-header.less";
@@ -25,58 +25,12 @@
 @import "blocks/photo-catalog.less";
 @import "blocks/add-your-photo.less";
 
-//Media scrreens -----------------------
+//Global styles ----------------------
 
-@tablet-screen: 660px;
-@desktop-screen: 1200px;
-@only-mobile-screen: 659px;
-
-//
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-body {
-  box-sizing: border-box;
-}
-
-.visually-hidden {
-  position: absolute;
-  opacity: 0;
-  left: 0;
-}
-
-p,
-b,
-a,
-td,
-span,
-small,
-blockquote,
-label,
-legend,
-h1,
-h2,
-h3 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  margin: 0;
-}
-
-.page-main.main-nav--nojs {
-  padding-top: 132px;
-}
-
-@media (min-width: @desktop-screen) {
-  .container {
-    max-width: 940px;
-    margin: 0 auto;
-  }
-
-  .page-main.main-nav--nojs {
-    padding-top: 0;
-  }
-}
+@import "global/normalize.less";
+@import "global/colors.less";
+@import "global/variables.less";
+@import "global/fonts.less";
+@import "global/container.less";
+@import "global/visually-hidden.less";
+@import "global/global.less";

@@ -1,5 +1,8 @@
+.user-emotions {
+  padding: 42px 2px;
+}
+
 .user-emotions__wrapper {
-  padding: 42px 22px;
   border: none;
 }
 
@@ -51,12 +54,18 @@
     border: 2px solid @border-lightgray;
     border-radius: 1px;
     background-color: @white;
-    margin: 51px 22px 0;
-    padding: 40px 60px 50px;
+
+    &.container {
+      padding: 40px 60px 50px;
+    }
   }
 }
 
 @media (min-width: @desktop-screen) {
+  .user-emotions {
+    padding: 0 2px;
+  }
+
   .user-emotions__textarea {
     height: 124px;
   }

@@ -52,8 +52,9 @@
           </p>
           <div class="download-the-app__image">
             <picture>
-            <source media="(min-width: 660px)" srcset="img/phone-hand-tablet.png"/>
-              <img src="img/phone-hand.png" alt="phone in hand">
+            <source media="(min-width: 1200px)" srcset="img/phone-hand-desktop.png 1x, img/phone-hand-desktop@2x.png 2x"/>
+            <source media="(min-width: 660px)" srcset="img/phone-hand-tablet.png 1x, img/phone-hand-tablet@2x.png 2x"/>
+              <img src="img/phone-hand.png" srcset="img/phone-hand@2x.png 2x" alt="phone in hand">
             </picture>
           </div>
         </div>
@@ -121,7 +122,10 @@
             </li>
           </ul>
           <div class="offers__image">
-            <img src="img/phone-3.png" alt="phone">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/phone-3-tablet.png 1x, img/photo-3-tablet@2x.png 2x"/>
+                <img src="img/phone-3.png" srcset="img/phone-3@2x.png 2x" alt="phone">
+            </picture>
           </div>
         </div>
       </div>
@@ -131,7 +135,10 @@
       <div class="timer__wrapper container">
         <h2 class="visually-hidden">Новость от учёных</h2>
         <a class="timer__image">
-          <img src="img/timer.png" alt="timer">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="img/timer-desktop.png 1x, img/timer-desktop@2x.png 2x"/>
+            <img src="img/timer.png" srcset="img/timer@2x.png 2x" alt="timer">
+          </picture>
         </a>
         <div class="timer__scientist-record">
           <h3 class="timer__title">Эффект</h3><h3 class="timer__title"> на 24 часа!</h3>
@@ -296,7 +303,11 @@
 
     <section class="map">
       <div class="map__image">
-        <img src="img/map2.png" alt="map">
+        <picture>
+        <source media="(min-width: 1200px)" srcset="img/map2-desktop.png 1x, img/map2-desktop@2x.png 2x"/>
+          <source media="(min-width: 660px)" srcset="img/map2-tablet.png 1x, img/map2-tablet@2x.png 2x"/>
+          <img src="img/map2.png" srcset="img/map2@2x.png 2x" alt="map">
+        </picture>
       </div>
     </section>
     </main>

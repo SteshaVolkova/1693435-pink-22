@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 66px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-mobile@2x.png");
+    background-size: 100%;
+  }
 }
 
 .catalog-page-title__head {
@@ -16,6 +21,11 @@
 @media (min-width: @tablet-screen) {
   .catalog-page-title {
     padding-top: 101px;
+    background-image: url("../../img/back-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.png");
+    }
   }
 
   .catalog-page-title__head {
@@ -26,6 +36,14 @@
 }
 
 @media (min-width: @desktop-screen) {
+  .catalog-page-title {
+    background-image: url("../../img/back-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.png");
+    }
+  }
+
   .catalog-page-title__head {
     padding: 74px 151px 104px;
   }

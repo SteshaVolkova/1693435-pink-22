@@ -18,6 +18,16 @@ input[type="email"] {
   border: 2px solid @border-lightgray;
   border-radius: 1px;
   margin: 17px 0 29px;
+  outline: none;
+
+  &:hover {
+    border-color: @dark-border-blue;
+  }
+
+  &:active,
+  &:focus {
+    border-color: @link-color;
+  }
 }
 
 input[placeholder] {
@@ -40,6 +50,23 @@ input[placeholder] {
   color: white;
   font-size: 18px;
   font-weight: 700;
+  outline: none;
+
+  &:hover {
+    background-color: @submit-hover-green;
+    border-color: @submit-hover-green;
+  }
+
+  &:active {
+    background-color: @submit-hover-green;
+    border-color: @submit-hover-green;
+    color: @white-opacity;
+    outline: none;
+  }
+}
+
+input[type="submit"][disabled="disabled"] {
+  background-color: @border-lightgray;
 }
 
 @media (min-width: @tablet-screen) {

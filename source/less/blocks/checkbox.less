@@ -13,6 +13,14 @@
   color: @dark-border-blue;
 }
 
+.custom-checkbox + label:hover::before {
+  border-color: @dark-border-blue;
+}
+
+.custom-checkbox + label:active::before {
+  border-color: @link-color;
+}
+
 .custom-checkbox + label::before {
   content: "";
   display: inline-block;

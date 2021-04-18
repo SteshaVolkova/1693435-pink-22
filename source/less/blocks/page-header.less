@@ -1,12 +1,11 @@
 .page-header {
-  background-color: @dark-blue;
+  background-color: @black-opacity;
   display: flex;
   justify-content: space-between;
   padding: 23px 0;
   position: fixed;
   left: 0;
   right: 0;
-  opacity: 0.7;
   z-index: 2;
 }
 
@@ -118,13 +117,12 @@
   .page-header,
   .page-header.main-nav--opened.main-nav--nojs {
     padding: 27px 0 30px;
-    background-color: @dark-blue;
+    background-color: @black-opacity;
     display: flex;
     justify-content: space-between;
     position: fixed;
     left: 0;
     right: 0;
-    opacity: 0.7;
     z-index: 2;
     border: none;
     height: 111px;
@@ -161,6 +159,11 @@
       background-color: transparent;
       border: none;
       padding: 0;
+
+      &.active {
+        padding-bottom: 13px;
+        border-bottom: 2px solid @white;
+      }
     }
 
     .main-nav__item a {
@@ -172,6 +175,23 @@
       text-decoration: none;
       padding: 5px 0 0;
       display: block;
+    }
+
+    .main-nav__item:hover {
+      border-color: @link-color;
+    }
+
+    .main-nav__item:hover > a {
+      color: @link-color;
+    }
+
+    .main-nav__item:active {
+      border-color: @link-color;
+      opacity: 0.3;
+    }
+
+    .main-nav__item:active > a {
+      color: @link-color;
     }
   }
 }

@@ -1,6 +1,9 @@
 .add-your-photo__wrapper {
-  padding: 20px 20px 40px;
   background-color: @light-gray;
+
+  &.container {
+    padding: 20px 20px 40px;
+  }
 }
 
 .add-your-photo__tabs-block {
@@ -204,22 +207,28 @@ input[type="range"]::-ms-thumb {
 
 @media (min-width: @desktop-screen) {
   .add-your-photo__wrapper {
-    padding: 57px 60px;
     grid-gap: 90px;
+
+    &.container {
+      padding: 57px 60px;
+    }
   }
 
   .add-your-photo__tab {
     padding: 13px 0;
   }
 
-  .add-your-photo__tabs-block {
-    padding-bottom: 160px;
+  .add-your-photo__form-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .add-your-photo__buttons {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 44px;
+    margin-top: auto;
   }
 
   .add-your-photo__submit,

@@ -2,6 +2,51 @@
   display: block;
 }
 
+.photo-block__panorama {
+  position: relative;
+
+  .photo-catalog__content {
+    margin: 0 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 14px;
+  }
+
+  .photo-catalog__user-name {
+    margin: 0;
+  }
+
+  .photo-catalog__user-text {
+    grid-column-start: -1;
+    grid-column-end: 1;
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .photo-catalog__like {
+    margin-top: 7px;
+  }
+}
+
+.photo-block__tag-wrapper {
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  right: 0;
+  left: 0;
+}
+
+.photo-block__tag {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 2;
+  text-transform: uppercase;
+  background-color: @link-color;
+  padding: 13px 20px 14px;
+  color: @white;
+  float: right;
+}
+
 .photo-catalog__list {
   margin: 0;
   list-style: none;
@@ -16,7 +61,10 @@
   background-color: @light-gray;
   display: flex;
   flex-direction: column;
-  height: 180px;
+
+  &.container {
+    padding: 25px 17px;
+  }
 }
 
 .photo-block {
@@ -36,6 +84,9 @@
 .photo-catalog__post-time {
   font-size: 12px;
   line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: @dark-border-blue;
 
   &::before {
     content: "(";
@@ -58,6 +109,10 @@
   margin-top: auto;
   border: none;
   background-color: transparent;
+
+  img {
+    width: auto;
+  }
 }
 
 .photo-catalog__like-text {
@@ -82,14 +137,23 @@
     grid-gap: 50px 20px;
   }
 
+  .photo-catalog__content {
+    height: 180px;
+  }
+
+  .photo-block__panorama {
+    .photo-catalog__content {
+      margin: 0 auto 50px;
+    }
+  }
+
+  .photo-block__tag-wrapper {
+    top: 57px;
+  }
+
   .photo-catalog__item {
     margin: 0;
     background-color: @light-gray;
-  }
-
-  .photo-catalog__item:first-child {
-    grid-column-start: 1;
-    grid-column-end: 3;
   }
 
   .photo-catalog__slogan {
@@ -104,12 +168,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .photo-catalog__item:first-child {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
   .photo-catalog__slogan {
     padding: 67px 119px 75px;
+  }
+
+  .photo-block__tag-wrapper {
+    top: 54px;
   }
 }

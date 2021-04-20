@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 66px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-mobile@2x.png");
+    background-size: 100%;
+  }
 }
 
 .tender-offer__slogan {
@@ -14,6 +19,14 @@
 }
 
 @media (min-width: @tablet-screen) {
+  .tender-offer {
+    background-image: url("../../img/back-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.png");
+    }
+  }
+
   .tender-offer__slogan {
     padding: 81px 20px 74px;
     font-weight: 300;
@@ -23,6 +36,14 @@
 }
 
 @media (min-width: @desktop-screen) {
+  .tender-offer {
+    background-image: url("../../img/back-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.png");
+    }
+  }
+
   .tender-offer__slogan {
     padding: 74px 20px 104px;
   }

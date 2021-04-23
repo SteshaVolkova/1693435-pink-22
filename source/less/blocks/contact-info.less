@@ -68,8 +68,20 @@
   }
 
   .contact-info__list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+
+  .contact-info__item:first-child {
+    order: 1;
+  }
+
+  .contact-info__item:last-child {
+    order: 2;
+  }
+
+  .contact-info__item:nth-child(2) {
+    order: 3;
   }
 }

@@ -6,6 +6,19 @@
   text-align: center;
 }
 
+.logo-footer {
+  color: @dark-border-blue;
+}
+
+.logo-footer:hover {
+  color: @link-color;
+}
+
+.logo-footer:active {
+  color: @dark-border-blue;
+  opacity: 0.3;
+}
+
 .mobile-footer-logo-desktop {
   display: none;
 }
@@ -26,7 +39,7 @@
   height: 48px;
   width: 48px;
   display: block;
-  border: 3px solid lightgray;
+  border: 3px solid @light-gray;
   border-radius: 50%;
 
   a {
@@ -34,12 +47,37 @@
     display: block;
     padding: 13px;
   }
+
+  .youtube-icon-link {
+    padding: 13px 15px;
+  }
+}
+
+.page-footer__social-item:hover {
+  border-color: @dark-border-blue;
+}
+
+.page-footer__social-item:active {
+  opacity: 0.3;
+}
+
+.html-academy-icon {
+  color: @link-color;
+}
+
+.html-academy-icon:hover {
+  color: @dark-border-blue;
+}
+
+.html-academy-icon:active {
+  opacity: 0.3;
 }
 
 .page-footer__copyright {
   text-align: center;
   display: flex;
   justify-content: center;
+  padding-top: 10px;
 }
 
 .copyright__text {

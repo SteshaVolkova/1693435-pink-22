@@ -14,10 +14,37 @@
   height: 24px;
   width: 50px;
   outline: none;
+  color: @white;
 
   &.open-menu {
     display: none;
   }
+}
+
+.main-nav__open-button:hover {
+  color: @link-color;
+}
+
+.tablet-header-logo,
+.desktop-header-logo {
+  display: none;
+}
+
+.logo {
+  color: @white;
+}
+
+.logo:hover {
+  color: @link-color;
+}
+
+.logo:active {
+  color: @white;
+  opacity: 0.3;
+}
+
+.main-nav__toggle:hover {
+  background-color: transparent;
 }
 
 .main-nav__close-button {
@@ -92,11 +119,20 @@
   a {
     font-size: 18px;
     font-weight: bold;
-    color: white;
+    color: @white;
     text-transform: uppercase;
     padding: 20px;
     display: block;
     text-decoration: none;
+  }
+
+  a:hover {
+    color: @link-color;
+  }
+
+  a:active {
+    color: @link-color;
+    opacity: 0.3;
   }
 
   .page-header__logo {
@@ -105,6 +141,15 @@
 }
 
 @media (min-width: @tablet-screen) {
+  .mobile-header-logo,
+  .desktop-header-logo {
+    display: none;
+  }
+
+  .tablet-header-logo {
+    display: block;
+  }
+
   .page-header {
     padding: 27px 20px 43px;
   }
@@ -116,6 +161,7 @@
 
   .main-nav__toggle {
     margin-top: 10px;
+    padding: 0;
   }
 
   .page-header.main-nav--nojs,
@@ -130,6 +176,7 @@
 
 @media (min-width: @desktop-screen) {
   .page-header,
+  .page-header.main-nav--nojs,
   .page-header.main-nav--opened.main-nav--nojs {
     padding: 27px 0 30px;
     background-color: @black-opacity;
@@ -178,6 +225,7 @@
       &.active {
         padding-bottom: 13px;
         border-bottom: 2px solid @white;
+        height: 40px;
       }
     }
 
@@ -201,12 +249,22 @@
     }
 
     .main-nav__item:active {
-      border-color: @link-color;
+      border-color: @white;
       opacity: 0.3;
     }
 
     .main-nav__item:active > a {
       color: @link-color;
+      opacity: 0.3;
     }
+  }
+
+  .mobile-header-logo,
+  .tablet-header-logo {
+    display: none;
+  }
+
+  .desktop-header-logo {
+    display: block;
   }
 }

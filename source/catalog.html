@@ -97,7 +97,10 @@
       <figure class="photo-block photo-block__panorama">
         <a href="#">
           <picture>
-          <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x"/>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x"/>
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x"/>
+            <source type="image/webp" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp">
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x"/>
             <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x"/>
               <img class="photo-catalog__panorama" src="img/panorama.jpg" srcset="img/panorama@2x.jpg 2x" alt="best panorama">
           </picture>
@@ -117,7 +120,9 @@
             перископе, задавайте свои вопросы
           </blockquote>
           <button class="photo-catalog__like">
-            <img src="img/heart.svg" alt="like icon">
+            <svg width="13" height="12" viewBox="0 0 13 12" class="like-icon-block">
+              <use xlink:href="img/index-sprite.svg#like-icon"></use>
+            </svg>
             <p class="photo-catalog__like-text">Нравится: 215</p>
           </button>
         </figcaption>
@@ -128,14 +133,14 @@
             <figure class="photo-block">
               <a href="#">
                 <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x"/>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x"/>
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/photo-1.webp 1x, img/photo-1@2x.webp">
+                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x"/>
                   <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x"/>
                     <img src="img/photo-1.jpg" srcset="img/photo-1@2x.jpg 2x" alt="car photo">
                 </picture>
               </a>
-              <p class="photo-block__tag-wrapper container">
-              <span class="photo-block__tag">Панорама дня</span>
-              </p>
               <figcaption class="photo-catalog__content container">
                 <p class="photo-catalog__user-name">
                 Левон
@@ -145,7 +150,9 @@
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </blockquote>
                 <button class="photo-catalog__like">
-                  <img src="img/heart.svg" alt="like icon">
+                  <svg width="13" height="12" viewBox="0 0 13 12" class="like-icon-block">
+                    <use xlink:href="img/index-sprite.svg#like-icon"></use>
+                  </svg>
                   <p class="photo-catalog__like-text">Нравится: 365</p>
                 </button>
               </figcaption>
@@ -155,14 +162,14 @@
             <figure class="photo-block">
               <a href="#">
                 <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x"/>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x"/>
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/photo-2.webp 1x, img/photo-2@2x.webp">
+                  <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x"/>
                   <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x"/>
                     <img src="img/photo-2.jpg" srcset="img/photo-2@2x.jpg 2x" alt="drum set">
                 </picture>
               </a>
-              <p class="photo-block__tag-wrapper container">
-              <span class="photo-block__tag">Панорама дня</span>
-              </p>
               <figcaption class="photo-catalog__content container">
                 <p class="photo-catalog__user-name">
                 Антон
@@ -172,7 +179,9 @@
                   Соседи будут рады!
                 </blockquote>
                 <button class="photo-catalog__like">
-                  <img src="img/heart.svg" alt="like icon">
+                  <svg width="13" height="12" viewBox="0 0 13 12" class="like-icon-block">
+                    <use xlink:href="img/index-sprite.svg#like-icon"></use>
+                  </svg>
                   <p class="photo-catalog__like-text">Нравится: 666</p>
                 </button>
               </figcaption>
@@ -182,14 +191,14 @@
             <figure class="photo-block">
               <a href="#">
                 <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x"/>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x"/>
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/photo-3.webp 1x, img/photo-3@2x.webp">
+                  <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x"/>
                   <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x"/>
                     <img src="img/photo-3.jpg" srcset="img/photo-3@2x.jpg 2x" alt="blue sky">
                 </picture>
               </a>
-              <p class="photo-block__tag-wrapper container">
-              <span class="photo-block__tag">Панорама дня</span>
-              </p>
               <figcaption class="photo-catalog__content container">
                 <p class="photo-catalog__user-name">
                 Борис
@@ -199,7 +208,9 @@
                   Здесь могла быть ваша цитата о высоком и вечном.
                 </blockquote>
                 <button class="photo-catalog__like">
-                  <img src="img/heart.svg" alt="like icon">
+                  <svg width="13" height="12" viewBox="0 0 13 12" class="like-icon-block">
+                    <use xlink:href="img/index-sprite.svg#like-icon"></use>
+                  </svg>
                   <p class="photo-catalog__like-text">Нравится: 215</p>
                 </button>
               </figcaption>
@@ -209,14 +220,14 @@
             <figure class="photo-block">
               <a href="#">
                 <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x"/>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x"/>
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/photo-4.webp 1x, img/photo-4@2x.webp">
+                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x"/>
                   <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x"/>
                     <img src="img/photo-4.jpg" srcset="img/photo-4@2x.jpg 2x" alt="kuban melon">
                 </picture>
               </a>
-              <p class="photo-block__tag-wrapper container">
-              <span class="photo-block__tag">Панорама дня</span>
-              </p>
               <figcaption class="photo-catalog__content container">
                 <p class="photo-catalog__user-name">
                 Сергей
@@ -226,7 +237,9 @@
                   Самая кубанская в мире!
                 </blockquote>
                 <button class="photo-catalog__like">
-                  <img src="img/heart.svg" alt="like icon">
+                  <svg width="13" height="12" viewBox="0 0 13 12" class="like-icon-block">
+                    <use xlink:href="img/index-sprite.svg#like-icon"></use>
+                  </svg>
                   <p class="photo-catalog__like-text">Нравится: 4</p>
                 </button>
               </figcaption>
@@ -236,14 +249,14 @@
             <figure class="photo-block">
               <a href="#">
                 <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x"/>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x"/>
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/photo-5.webp 1x, img/photo-5@2x.webp">
+                  <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x"/>
                   <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x"/>
                     <img src="img/photo-5.jpg" srcset="img/photo-5@2x.jpg 2x" alt="mauntains">
                 </picture>
               </a>
-              <p class="photo-block__tag-wrapper container">
-              <span class="photo-block__tag">Панорама дня</span>
-              </p>
               <figcaption class="photo-catalog__content container">
                 <p class="photo-catalog__user-name">
                 Максим
@@ -253,7 +266,9 @@
                   Где снег-то?
                 </blockquote>
                 <button class="photo-catalog__like">
-                  <img src="img/heart.svg" alt="like icon">
+                  <svg width="13" height="12" viewBox="0 0 13 12" class="like-icon-block">
+                    <use xlink:href="img/index-sprite.svg#like-icon"></use>
+                  </svg>
                   <p class="photo-catalog__like-text">Нравится: 150</p>
                 </button>
               </figcaption>
@@ -263,14 +278,14 @@
             <figure class="photo-block">
               <a href="#">
                 <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x"/>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x"/>
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/photo-6.webp 1x, img/photo-6@2x.webp">
+                  <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x"/>
                   <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x"/>
                     <img src="img/photo-6.jpg" srcset="img/photo-6@2x.jpg 2x" alt="plane in the sky">
                 </picture>
               </a>
-              <p class="photo-block__tag-wrapper container">
-              <span class="photo-block__tag">Панорама дня</span>
-              </p>
               <figcaption class="photo-catalog__content container">
                 <p class="photo-catalog__user-name">
                 Надежда
@@ -280,7 +295,9 @@
                   Всем GM и взаимные лайки!
                 </blockquote>
                 <button class="photo-catalog__like">
-                  <img src="img/heart.svg" alt="like icon">
+                  <svg width="13" height="12" viewBox="0 0 13 12" class="like-icon-block">
+                    <use xlink:href="img/index-sprite.svg#like-icon"></use>
+                  </svg>
                   <p class="photo-catalog__like-text">Нравится: 2560</p>
                 </button>
               </figcaption>
@@ -299,7 +316,10 @@
         <div class="add-your-photo__your-image">
           <a href="#">
             <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x"/>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-7-desktop.webp 1x, img/photo-7-desktop@2x.webp 2x"/>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-7-tablet.webp 1x, img/photo-7-tablet@2x.webp 2x"/>
+              <source type="image/webp" srcset="img/photo-7.webp 1x, img/photo-7@2x.webp">
+              <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x"/>
               <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x"/>
                 <img class="add-your-photo__image" src="img/photo-7.jpg" srcset="img/photo-7@2x.jpg 2x" alt="car photo">
             </picture>
@@ -311,7 +331,9 @@
               <div class="add-your-photo__tab tab">
                 <input class="add-your-photo__input" type="radio" id="tab1" name="tab-group" checked>
                 <label for="tab1" class="tab-title selected">
-                  <img src="img/crop.svg" alt="crop icon">
+                  <svg width="44" height="44" class="crop-icon">
+                    <use xlink:href="img/index-sprite.svg#crop-photo-icon"></use>
+                  </svg>
                   <span class="visually-hidden">Обрезка картинки</span>
                 </label>
                 <section class="tab-content selected">
@@ -322,7 +344,9 @@
               <div class="add-your-photo__tab tab">
                 <input class="add-your-photo__input" type="radio" id="tab2" name="tab-group">
                 <label for="tab2" class="tab-title">
-                  <img src="img/fill.svg" alt="fill icon">
+                  <svg width="48" height="43" class="fill-icon">
+                    <use xlink:href="img/index-sprite.svg#fill-photo-icon"></use>
+                  </svg>
                   <span class="visually-hidden">Заливка картинки</span>
                 </label>
                 <section class="tab-content">
@@ -333,7 +357,9 @@
               <div class="add-your-photo__tab tab">
                 <input class="add-your-photo__input" type="radio" id="tab3" name="tab-group">
                 <label for="tab3" class="tab-title">
-                  <img src="img/contrast.svg" alt="contrast icon">
+                  <svg width="44" height="44" viewBox="0 0 44 44" class="contast-icon">
+                    <use xlink:href="img/index-sprite.svg#contrast-photo-icon"></use>
+                  </svg>
                   <span class="visually-hidden">Контрастность картинки</span>
                 </label>
                 <section class="tab-content">
@@ -398,7 +424,7 @@
               </a>
             </li>
             <li class="page-footer__social-item">
-              <a href="https://www.youtube.com/user/htmlacademyru">
+              <a href="https://www.youtube.com/user/htmlacademyru" class="youtube-icon-link">
                 <svg width="15" height="13" class="youtube-icon">
                   <use xlink:href="img/index-sprite.svg#icon-youtube"></use>
                 </svg>
@@ -409,7 +435,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34" class="youtube-icon">
+            <svg width="27" height="34" class="html-academy-icon">
               <use xlink:href="img/index-sprite.svg#icon-html-academy"></use>
             </svg>
           </a>

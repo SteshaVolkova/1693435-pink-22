@@ -138,14 +138,10 @@ const reload = () => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/js/app.js", gulp.series("scripts"));
-  gulp.watch("source/*.html").gulp.series(html, reload);
+  gulp.watch("source/less/**/*.less", gulp.series(styles));
+  gulp.watch("source/js/app.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
-
-exports.default = gulp.series(
-  styles, server, watcher
-);
 
 // Build
 

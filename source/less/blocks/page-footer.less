@@ -4,6 +4,16 @@
 
 .page-footer__logo {
   text-align: center;
+  color: @dark-border-blue;
+}
+
+.page-footer__logo:hover {
+  color: @link-color;
+}
+
+.page-footer__logo:active {
+  color: @dark-border-blue;
+  opacity: 0.3;
 }
 
 .logo-footer {
@@ -19,12 +29,8 @@
   opacity: 0.3;
 }
 
-.mobile-footer-logo-desktop {
+.logo-footer-desktop {
   display: none;
-}
-
-.page-footer__logo-glasses {
-  padding-right: 12px;
 }
 
 .page-footer__social-list {
@@ -107,11 +113,11 @@
     padding: 70px 0 80px;
   }
 
-  .mobile-footer-logo-desktop {
+  .logo-footer-desktop {
     display: block;
   }
 
-  .mobile-footer-logo {
+  .logo-footer-mobile {
     display: none;
   }
 }

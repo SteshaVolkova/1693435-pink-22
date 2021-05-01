@@ -1,106 +1,47 @@
-.slider__toggles {
-  display: flex;
-  justify-content: center;
-}
-
-.slider__toggle {
-  display: inline-flex;
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
-  background-color: @border-lightgray;
-  margin: 13px;
-}
-
-.slider__toggle:hover {
-  background-color: @dark-border-blue;
-}
-
-.slider__toggle:active {
-  background-color: @dark-border-blue;
-  opacity: 0.1;
-}
-
-.slider__toggle--current {
-  border: 3px solid @dark-border-blue;
-  height: 12px;
-  width: 12px;
-  background-image: none;
-  background-color: white;
-  margin: 10px;
-}
-
-.slider {
-  width: 300px;
-  text-align: center;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.slides {
+.carousel__wrapper {
   display: flex;
   overflow-x: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-points-x: repeat(300px);
   scroll-snap-type: x mandatory;
 }
 
-.slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-.slides::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 10px;
-}
-
-.slides::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.price__title,
-.price__option-content,
-.slider__item {
+.carousel__slide {
+  flex: 0 0 100%;
   scroll-snap-align: start;
-  flex-shrink: 0;
-  width: 300px;
-  max-width: 100%;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  position: relative;
 }
 
-.slider > a:active {
-  top: 1px;
+.carousel__dots {
+  list-style: none;
+  padding: 0 0 5px;
+  margin: 20px 0 0;
+  display: grid;
+  gap: 18px;
+  grid-auto-flow: column;
+  justify-content: center;
 }
 
-@media (min-width: @tablet-screen) {
-  .slider {
-    width: 620px;
-  }
-
-  .slides {
-    scroll-snap-points-x: repeat(620px);
-  }
-
-  .slider__item {
-    width: 620px;
-  }
+.carousel__dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: @dark-blue-opacity;
+  border-radius: 50%;
 }
 
-@media (min-width: @desktop-screen) {
-  .slider {
-    width: 900px;
-  }
+.carousel__dot--active {
+  box-shadow: 0 0 0 3px @dark-border-blue;
+  background-color: transparent;
+  cursor: default;
+}
 
-  .slides {
-    scroll-snap-points-x: repeat(900px);
-  }
+.carousel__title {
+  text-align: center;
+}
 
-  .slider__item {
-    width: 900px;
-  }
+.carousel__dot:hover {
+  background-color: @dark-border-blue;
+}
+
+.carousel__dot:active {
+  background-color: @dark-border-blue;
+  opacity: 0.1;
 }

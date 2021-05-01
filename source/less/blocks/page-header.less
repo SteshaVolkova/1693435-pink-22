@@ -21,8 +21,19 @@
   }
 }
 
+.main-nav__close-button {
+  color: @white;
+}
+
+.main-nav__close-button:hover,
 .main-nav__open-button:hover {
   color: @link-color;
+}
+
+.main-nav__close-button:active,
+.main-nav__open-button:active {
+  color: @white;
+  opacity: 0.3;
 }
 
 .tablet-header-logo,
@@ -69,6 +80,16 @@
   padding: 0;
   height: 23px;
   width: 75px;
+  color: @white;
+}
+
+.page-header__logo:hover {
+  color: @link-color;
+}
+
+.page-header__logo:active {
+  color: @white;
+  opacity: 0.3;
 }
 
 .main-nav__wrapper {

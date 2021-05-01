@@ -21,21 +21,6 @@
   }
 }
 
-.main-nav__close-button {
-  color: @white;
-}
-
-.main-nav__close-button:hover,
-.main-nav__open-button:hover {
-  color: @link-color;
-}
-
-.main-nav__close-button:active,
-.main-nav__open-button:active {
-  color: @white;
-  opacity: 0.3;
-}
-
 .tablet-header-logo,
 .desktop-header-logo {
   display: none;
@@ -64,10 +49,22 @@
   width: 23px;
   float: right;
   outline: none;
+  color: @white;
 
   &.open-menu {
     display: block;
   }
+}
+
+.main-nav__close-button:hover,
+.main-nav__open-button:hover {
+  color: @link-color;
+}
+
+.main-nav__close-button:active,
+.main-nav__open-button:active {
+  color: @white;
+  opacity: 0.3;
 }
 
 .page-header__container {

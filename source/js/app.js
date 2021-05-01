@@ -104,4 +104,3 @@ function removeHashFromLink(link) {
   const href = link.getAttribute("href");
   return href.substring(1);
 }
-

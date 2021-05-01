@@ -15,26 +15,17 @@
 
 .price__tariff {
   background-color: @dark-border-blue;
-  color: #fff;
+  color: @white;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   text-transform: uppercase;
-  color: #ffffff;
   padding: 8px;
   position: relative;
   overflow: hidden;
-  border: 2px solid #e5e5e5;
+  border: 2px solid @border-lightgray;
   scroll-snap-align: start;
-
-  &:first-of-type {
-    border-radius: 3px 0px 0px 0px;
-  }
-
-  &:last-of-type {
-    border-radius: 3px 0px 0px 0px;
-  }
 }
 
 .price__price {
@@ -84,12 +75,12 @@
 
 .price__feature,
 .price__value {
-  border: 2px solid #e5e5e5;
+  border: 2px solid @border-lightgray;
   height: 45px;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  background-color: #fff;
+  background-color: @white;
   color: @dark-border-blue;
   padding: 4px 16px;
 }
@@ -105,12 +96,8 @@
 .price__value-wrapper {
   display: flex;
   flex: wrap;
-  justify-content: center;
   align-items: center;
   text-transform: uppercase;
-}
-
-.price__value-wrapper {
   justify-content: space-between;
 
   &::before {

@@ -49,10 +49,12 @@
   background-color: @dark-border-blue;
   opacity: 0.1;
 }
+
 @media (min-width: @desktop-screen) {
   .carousel__dots {
     grid-column-start: 1;
     grid-column-end: -1;
+    display: none;
   }
 
   .carousel__control {
@@ -62,9 +64,5 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
-  }
-
-  .carousel__dots {
-    display: none;
   }
 }

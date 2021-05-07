@@ -75,9 +75,7 @@ function initCarousel(carousel) {
 
   /* Пролистывает таблицу на вторую позицию */
   const startSlider = carousel.dataset.start;
-
-  if (Boolean(startSlider)) {
-    // console.log(startSlider)
+  if (startSlider) {
     scrollToSlide(slides[Number(startSlider)]);
   }
 
@@ -90,7 +88,30 @@ function initCarousel(carousel) {
     });
   });
 
+  /* Кнопки назад-вперёд */
+  const controls = carousel.querySelectorAll(".carousel__control");
 
+  if (controls.length) {
+    controls.forEach((control) => {
+      control.addEventListener("click", (evt) => {
+        evt.preventDefault();
+        console.log(current);
+        const max = slides.length - 1;
+        const isPrev = control.classList.contains("carousel__control--prev");
+        let target;
+
+        if (isPrev) {
+
+           target = current === 0 ? max : current - 1;
+        }
+        console.log(slides[target])
+
+        scrollToSlide[slides[target]]
+
+
+      });
+    });
+  }
 
   function scrollToSlide(slide) {
     wrapper.scrollTo({
@@ -104,3 +125,42 @@ function removeHashFromLink(link) {
   const href = link.getAttribute("href");
   return href.substring(1);
 }
+
+
+var popupEmpty = document.querySelector('.popup-empty-inputs');
+var popupSubmit = document.querySelector('.popup-submit');
+var closePopup = document.querySelector('.close-popup');
+
+function validate(){
+   //Считаем значения из полей name и email в переменные z
+   var lastName=document.forms['form']['last-name'].value;
+   var firstName=document.forms['form']['first-name'].value;
+   var email=document.forms['form']['email-address'].value;
+   //Если поле name пустое выведем сообщение и предотвратим отправку формы
+	if (lastName.length==0){
+    popupEmpty.classList.toggle('show-popup');
+		return false;
+	}
+	if (firstName.length==0){
+    popupEmpty.classList.add('show-popup');
+		return false;
+	}
+	if (email.length==0){
+    popupEmpty.classList.add('show-popup');
+		return false;
+	}
+	if (lastName.length!=0,firstName.length!=0,email.length!=0){
+    popupSubmit.classList.add('show-popup');
+	}
+}
+
+var popupEmptyShow = document.querySelector('.popup-empty-inputs.show-popup');
+var popupSubmitShow = document.querySelector('.popup-submit.show-popup');
+
+closePopup.onclick = function(){
+	popupEmptyShow.classList.remove('show-popup');
+};
+
+closePopup.onclick = function(){
+	popupSubmitShow.classList.remove('show-popup');
+};

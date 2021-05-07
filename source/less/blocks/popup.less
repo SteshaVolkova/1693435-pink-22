@@ -1,0 +1,73 @@
+.popup-empty-inputs,
+.popup-submit {
+  display: none;
+
+  &.show-popup {
+    display: block;
+    position: fixed;
+    width: 460px;
+    left: 27%;
+    top: 30%;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+    border-radius: 5px;
+    padding: 50px 55px;
+  }
+}
+
+.popup-submit.show-popup {
+  top: 25%;
+  padding: 50px 0 0 0;
+}
+
+.popup-submit__bottom-side {
+  padding: 52px 82px;
+  background-color: @light-gray;
+}
+
+.popup-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  padding: 0 50px 25px;
+  text-align: center;
+}
+
+.popup-message {
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px 35px;
+}
+
+.close-popup {
+  display: block;
+  width: 269px;
+  height: 59px;
+  background-color: @submit-green;
+  border: 2px solid @submit-green;
+  border-radius: 1px;
+  margin: 0 auto;
+  color: @white;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: @submit-hover-green;
+    border-color: @submit-hover-green;
+  }
+
+  &:hover span {
+    color: @white;
+  }
+
+  &:active {
+    background-color: @submit-hover-green;
+    border-color: @submit-hover-green;
+    color: @white-opacity;
+  }
+}

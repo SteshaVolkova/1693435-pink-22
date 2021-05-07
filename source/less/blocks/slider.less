@@ -1,6 +1,6 @@
 .carousel__wrapper {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-snap-type: x mandatory;
 }
 
@@ -27,6 +27,10 @@
   border-radius: 50%;
 }
 
+.carousel__control {
+  display: none;
+}
+
 .carousel__dot--active {
   box-shadow: 0 0 0 3px @dark-border-blue;
   background-color: transparent;
@@ -44,4 +48,23 @@
 .carousel__dot:active {
   background-color: @dark-border-blue;
   opacity: 0.1;
+}
+@media (min-width: @desktop-screen) {
+  .carousel__dots {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .carousel__control {
+    display: block;
+    outline: none;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .carousel__dots {
+    display: none;
+  }
 }

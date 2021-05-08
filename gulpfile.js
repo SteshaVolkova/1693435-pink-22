@@ -162,4 +162,4 @@ const build = gulp.series(
 
 exports.build = build;
 
-exports.default = gulp.series(styles, server, watcher);
+exports.default = gulp.series(server, watcher);

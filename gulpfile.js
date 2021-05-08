@@ -13,6 +13,8 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
+const concat = require('gulp-concat');
+
 
 // Styles
 
@@ -45,9 +47,9 @@ exports.html = html;
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/app.js")
+  return gulp.src("source/js/*.js")
+  .pipe(concat('app.min.js'))
   .pipe(terser())
-  .pipe(rename("app.min.js"))
   .pipe(gulp.dest("build/js"))
   .pipe(sync.stream());
 }
@@ -139,7 +141,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
-  gulp.watch("source/js/app.js", gulp.series(scripts));
+  gulp.watch("source/js/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 

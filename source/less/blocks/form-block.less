@@ -1,3 +1,14 @@
+.container {
+  .form-block& {
+    padding: 0;
+  }
+}
+
+.selection-os__headign.visually-hidden,
+.travel-achievements__headline.visually-hidden {
+  display: none;
+}
+
 .label-title {
   color: @link-color;
   font-size: 14px;
@@ -68,6 +79,17 @@ input[type="submit"][disabled="disabled"] {
 }
 
 @media (min-width: @tablet-screen) {
+  .container {
+    .form-block& {
+      padding: 0 20px;
+    }
+  }
+
+  .selection-os__headign.visually-hidden,
+  .travel-achievements__headline.visually-hidden {
+    display: block;
+  }
+
   .form-block {
     display: flex;
     flex-direction: column;

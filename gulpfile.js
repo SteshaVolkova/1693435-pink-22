@@ -47,12 +47,13 @@ exports.html = html;
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/*.js")
-  .pipe(concat('app.min.js'))
-  .pipe(terser())
-  .pipe(gulp.dest("build/js"))
-  .pipe(sync.stream());
-}
+  return gulp
+    .src("source/js/*.js", { sourcemaps: true })
+    .pipe(terser())
+    .pipe(concat("app.min.js"))
+    .pipe(gulp.dest("build/js"), { sourcemaps: true })
+    .pipe(sync.stream());
+};
 
 exports.scripts = scripts;
 

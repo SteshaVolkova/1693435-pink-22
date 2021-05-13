@@ -2,7 +2,7 @@
   background-image: url("../../img/back-mobile.png");
   background-size: 120%;
   background-repeat: no-repeat;
-  padding-top: 50px;
+  padding-top: 30px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/back-mobile@2x.png");
@@ -18,7 +18,7 @@
 
 .download-the-app__slogan {
   color: @white;
-  padding: 30px 60px 35px;
+  padding: 30px 40px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -35,7 +35,7 @@
 
 .download-the-app__bottom-side {
   background-color: @dark-blue;
-  padding: 28px 20px 38px;
+  padding: 28px 21px 26px;
 }
 
 .download-the-app__download-bottom {
@@ -47,16 +47,33 @@
     color: white;
     font-size: 18px;
     font-weight: 700;
-    padding: 13px;
+    padding: 14.5px;
+  }
+
+  &:hover {
+    text-decoration: none;
   }
 }
 
 .download-the-app__os-list {
   list-style: none;
   padding: 0;
-  margin: 38px 0;
+  margin: 32px 0 19px;
   display: flex;
   justify-content: space-evenly;
+}
+
+.apple-item-logo {
+  padding-left: 3px;
+}
+
+.android-item-logo {
+  padding-top: 6px;
+}
+
+.windows-item-logo {
+  padding-top: 12px;
+  padding-right: 2px;
 }
 
 .download-the-app__img-logo {
@@ -70,6 +87,7 @@
   color: @white;
   text-align: center;
   padding: 0 20px;
+  line-height: 24px;
 }
 
 @media (min-width: @tablet-screen) {
@@ -84,7 +102,7 @@
 
   .download-the-app__image {
     img {
-      max-height: 645px;
+      max-height: 460px;
       width: auto;
       margin-right: 60px;
     }
@@ -137,6 +155,7 @@
 
   .download-the-app__image {
     img {
+      max-height: none;
       margin-right: 0;
     }
   }

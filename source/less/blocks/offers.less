@@ -3,7 +3,7 @@
 }
 
 .offers__header {
-  padding: 45px 0 40px;
+  padding: 45px 0 32px;
   background-color: @white;
   position: relative;
 }
@@ -12,7 +12,7 @@
   content: "";
   display: block;
   background-color: @white;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 65%);
   height: 50px;
   position: absolute;
   bottom: -50px;
@@ -23,12 +23,17 @@
   font-size: 24px;
   text-align: center;
   line-height: 28.8px;
-  padding-bottom: 24px;
+  padding-bottom: 31px;
+  letter-spacing: -0.5px;
+}
+
+.offers__slogan ~ .offers__slogan {
+  padding-bottom: 0;
 }
 
 .offers__content {
   background-color: @light-gray;
-  padding: 70px 0 0;
+  padding: 82px 0 0;
 }
 
 .offers__list {
@@ -45,17 +50,20 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
 }
 
 .offers__item-content {
   font-size: 14px;
   line-height: 24px;
-  padding-bottom: 43px;
+  padding-bottom: 31px;
 }
 
 .offers__image {
+  padding-top: 10px;
+
   img {
+    width: 156px;
     display: block;
     margin: 0 auto;
   }

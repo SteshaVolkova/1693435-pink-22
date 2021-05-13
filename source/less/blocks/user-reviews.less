@@ -1,5 +1,16 @@
 .user-reviews {
-  padding: 50px 0;
+  padding: 5px 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -40px;
+    background-color: @white;
+  }
 }
 
 .user-reviews__list {
@@ -12,7 +23,7 @@
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 18px;
 }
 
 .user-reviews__user-description {

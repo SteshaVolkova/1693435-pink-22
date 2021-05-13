@@ -1,7 +1,7 @@
 .contact-info {
   background-color: @white;
   position: relative;
-  padding: 47px 0;
+  padding: 37px 0;
 
   &::after {
     content: "";
@@ -13,6 +13,7 @@
     bottom: -49px;
     left: 0;
     width: 100%;
+    z-index: 2;
   }
 }
 
@@ -20,7 +21,8 @@
   font-size: 24px;
   font-style: initial;
   text-align: center;
-  padding-bottom: 45px;
+  padding-bottom: 38px;
+  letter-spacing: -0.5px;
 }
 
 .contact-info__list {
@@ -30,7 +32,7 @@
 }
 
 .contact-info__item {
-  padding-bottom: 30px;
+  padding-bottom: 19px;
 
   a {
     display: block;
@@ -40,6 +42,7 @@
     font-style: initial;
     color: @link-color;
     text-decoration: none;
+    word-break: break-all;
   }
 }
 

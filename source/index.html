@@ -80,21 +80,21 @@
           <a href="https://www.apple.com/ru/app-store/" class="download-the-app__download-bottom
           button"><span>Скачать приложение</span></a>
           <ul class="download-the-app__os-list">
-            <li class="download-the-app__item-logo">
+            <li class="download-the-app__item-logo apple-item-logo">
               <a href="https://www.apple.com/ru/app-store/">
                 <svg width="47" height="56" class="download-the-app__img-logo">
                   <use xlink:href="img/index-sprite.svg#icon-apple-logo"></use>
                 </svg>
               </a>
             </li>
-            <li class="download-the-app__item-logo">
+            <li class="download-the-app__item-logo android-item-logo">
               <a href="#">
                 <svg width="43" height="47" class="download-the-app__img-logo">
                   <use xlink:href="img/index-sprite.svg#icon-android-logo"></use>
                 </svg>
               </a>
             </li>
-            <li class="download-the-app__item-logo">
+            <li class="download-the-app__item-logo windows-item-logo">
               <a href="#">
                 <svg width="44" height="41" class="download-the-app__img-logo">
                   <use xlink:href="img/index-sprite.svg#icon-microsoft-logo"></use>
@@ -362,14 +362,7 @@
 
     <section class="map">
       <div class="map__image">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/map2-desktop.webp 1x, img/map2-desktop@2x.webp 2x"/>
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/map2-tablet.webp 1x, img/map2-tablet@2x.webp 2x"/>
-          <source type="image/webp" srcset="img/map2-tablet.webp 1x, img/map2-tablet@2x.webp 2x"/>
-          <source media="(min-width: 1200px)" srcset="img/map2-desktop.png 1x, img/map2-desktop@2x.png 2x"/>
-          <source media="(min-width: 660px)" srcset="img/map2-tablet.png 1x, img/map2-tablet@2x.png 2x"/>
-            <img src="img/map2.png" srcset="img/map2@2x.png 2x" alt="map">
-        </picture>
+        <div id="map" class="google-map"></div>
       </div>
     </section>
     </main>
@@ -423,6 +416,7 @@
     </footer>
 
     <script src="js/app.min.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFeH4xINWWrtTioMjF1_9Ov_4XNsGwQHc&callback=initMap&libraries=&v=weekly" async></script>
 
   </body>
 </html>

@@ -7,8 +7,8 @@
     display: block;
     position: relative;
 
-    &:before {
-      content: '';
+    &::before {
+      content: "";
       height: 80px;
       position: absolute;
       top: 0;
@@ -30,10 +30,10 @@
   .timer__image {
     margin-right: 72px;
 
-		img {
-			width: 238px;
-			z-index: 1;
-			position: absolute;
+    img {
+      width: 238px;
+      z-index: 1;
+      position: absolute;
       top: 55px;
     }
   }
@@ -50,7 +50,7 @@
 
   .timer__title:last-of-type {
     margin-bottom: 10px;
-		padding-right: 100px;
+    padding-right: 100px;
   }
 
   .timer__scientist-thing {
@@ -76,29 +76,33 @@
     padding: 17px 130px 67px;
     background-color: @light-gray;
 
-    &:before {
+    &::before {
       content: none;
     }
   }
 
-	.timer__wrapper.container {
-		padding: 30px 20px 85px;
+  .timer__wrapper.container {
+    padding: 30px 20px 85px;
     background-color: @light-gray;
-	}
+  }
 
-	.timer__image img {
-		width: 25%;
-		top: 10px;
-		left: 130px;
-	}
+  .timer__image img {
+    width: 25%;
+    top: 10px;
+    left: 130px;
+  }
 
-	.timer__title:last-of-type {
-		margin-left: 10px;
-	}
+  .timer__title:last-of-type {
+    margin-left: 10px;
+  }
 
-	.timer__scientist-thing {
-		padding: 25px 15px 30px 0;
-	}
+  .timer__scientist-thing {
+    padding: 25px 15px 30px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
 
   .timer__title {
     display: contents;
@@ -108,16 +112,9 @@
     margin-bottom: 37px;
   }
 
-  .timer__scientist-thing {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 0;
-  }
-
   .timer__scientist-record {
     padding-top: 60px;
-		margin-left: 279px;
+    margin-left: 279px;
 
     a {
       font-size: 18px;

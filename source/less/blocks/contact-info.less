@@ -62,19 +62,16 @@
   .contact-info::after {
     height: 90px;
     bottom: -89px;
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 50% 80%, 0 0);
   }
 
   .contact-info {
     padding: 65px 5px 0;
-
-		&:after {
-			clip-path: polygon(0 0, 100% 0%, 100% 0, 50% 80%, 0 0);
-		}
   }
 
-	.contact-info__wrapper.container {
-		padding: 0;
-	}
+  .contact-info__wrapper.container {
+    padding: 0;
+  }
 
   .contact-info__title {
     font-size: 40px;
@@ -82,55 +79,55 @@
     padding-bottom: 31px;
   }
 
-	.contact-info__item-title {
-		padding-bottom: 4px;
-	}
+  .contact-info__item-title {
+    padding-bottom: 4px;
+  }
 
-	.contact-info__list {
-		display: flex;
+  .contact-info__list {
+    display: flex;
     justify-content: center;
-		flex-wrap: wrap;
-	}
+    flex-wrap: wrap;
+  }
 
   .contact-info__item {
     width: 50%;
   }
 
   .contact-info__item:last-child {
-		padding: 23px;
-	}
+    padding: 23px;
+  }
 }
 
 @media (min-width: @desktop-screen) {
-	.contact-info__title {
-		font-size: 50px;
-		line-height: 67px;
-		padding-bottom: 41px;
-		letter-spacing: -1px;
-	}
+  .contact-info__title {
+    font-size: 50px;
+    line-height: 67px;
+    padding-bottom: 41px;
+    letter-spacing: -1px;
+  }
 
-	.contact-info {
-		padding: 60px 5px 0;
-	}
+  .contact-info {
+    padding: 60px 5px 0;
+  }
 
-	.contact-info:after {
-		clip-path: polygon(0 0, 100% 0%, 100% 0, 50% 110%, 0 0);
-	}
+  .contact-info::after {
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 50% 110%, 0 0);
+  }
 
   .contact-info__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
-		padding: 0 8px;
+    padding: 0 8px;
   }
 
-	.contact-info__item-title {
-		padding-bottom: 21px;
-	}
+  .contact-info__item-title {
+    padding-bottom: 21px;
+  }
 
-	.contact-info__item {
-		width: 100%;
-	}
+  .contact-info__item {
+    width: 100%;
+  }
 
   .contact-info__item:first-child {
     order: 1;
@@ -138,7 +135,7 @@
 
   .contact-info__item:last-child {
     order: 2;
-		padding: 0 0 23px;
+    padding: 0 0 23px;
   }
 
   .contact-info__item:nth-child(2) {

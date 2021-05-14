@@ -94,6 +94,7 @@
   .download-the-app {
     background-image: url("../../img/back-tablet.png");
     background-size: 100%;
+    padding-top: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/back-tablet@2x.png");
@@ -101,27 +102,43 @@
   }
 
   .download-the-app__image {
+    padding-top: 75px;
+
     img {
-      max-height: 460px;
+      max-height: 545px;
       width: auto;
-      margin-right: 60px;
+      margin-right: 0;
     }
   }
 
   .download-the-app__wrapper {
     position: relative;
-
-    &.container {
-      padding: 50px 20px 0;
-    }
   }
 
   .download-the-app__bottom-side {
     position: absolute;
-    bottom: 80px;
-    width: 50%;
+    bottom: 89px;
+    width: 52%;
     background-color: transparent;
   }
+
+  .download-the-app__os-list {
+    margin: 45px 0 30px;
+  }
+
+  .download-the-app__clarification {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .windows-item-logo {
+		padding-top: 9px;
+		padding-right: 17px;
+  }
+
+	.apple-item-logo {
+		padding-left: 10px;
+	}
 
   .download-the-app__top-side {
     padding-top: 110px;
@@ -130,9 +147,9 @@
   .download-the-app__slogan {
     padding: 20px;
     position: absolute;
-    top: 230px;
+    top: 185px;
     left: 30px;
-    width: 47%;
+    width: 43%;
     font-size: 40px;
     font-weight: 300;
     line-height: 120%;
@@ -153,7 +170,10 @@
     padding-top: 200px;
   }
 
-  .download-the-app__image {
+	.download-the-app__image {
+		padding-top: 8px;
+		padding-left: 15px;
+
     img {
       max-height: none;
       margin-right: 0;
@@ -161,10 +181,38 @@
   }
 
   .download-the-app__slogan {
-    width: 38%;
+		width: 37%;
+		left: -24px;
+		top: 189px;
+		font-size: 50px;
+		line-height: 68px;
   }
 
+	.download-the-app__download-bottom span {
+		letter-spacing: 2px;
+	}
+
+	.apple-item-logo {
+		padding-left: 11px;
+		padding-bottom: 3px;
+	}
+
+	.android-item-logo {
+		padding-top: 8px;
+	}
+
+	.windows-item-logo {
+		padding-right: 13px;
+		padding-top: 12px;
+	}
+
   .download-the-app__bottom-side {
-    width: 40%;
+		width: 32%;
+		padding: 0;
+    bottom: 126px;
   }
+
+	.download-the-app__os-list {
+		margin: 68px 0 45px;
+	}
 }

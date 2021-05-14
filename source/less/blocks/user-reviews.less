@@ -47,6 +47,21 @@
 }
 
 @media (min-width: @tablet-screen) {
+	.user-reviews:after {
+		content: "";
+		display: block;
+		background-color: @white;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 80%);
+		height: 50px;
+		position: absolute;
+		bottom: -50px;
+		width: 100%;
+	}
+
+	.user-reviews__wrapper.container {
+		padding: 20px 20px 8px;
+	}
+
   .user-reviews__item {
     display: flex;
     flex-direction: column;
@@ -57,7 +72,7 @@
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    padding-bottom: 50px;
+    padding-bottom: 37px;
   }
 
   .user-reviews__user-name {
@@ -65,7 +80,7 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 700;
-    padding-bottom: 17px;
+    padding-bottom: 0;
   }
 
   .user-reviews__user-description {
@@ -81,9 +96,19 @@
 @media (min-width: @desktop-screen) {
   .user-reviews__wrapper {
     display: grid;
-    grid-template-columns: 80px auto 80px;
+    grid-template-columns: 30px auto 30px;
     align-items: center;
   }
+
+	.user-reviews__wrapper.container {
+		padding: 20px 0px 30px;
+	}
+
+	.user-reviews:after {
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+		height: 100px;
+		bottom: -100px;
+	}
 
   .user-reviews__user-name {
     font-size: 24px;
@@ -93,10 +118,14 @@
     font-size: 18px;
   }
 
+	.user-reviews__user-text {
+		padding: 0 50px 37px;
+	}
+
   .user-reviews__item {
     background-image: url("../../img/quotes.svg");
     background-repeat: no-repeat;
     background-position: top center;
-    padding-top: 130px;
+    padding-top: 119px;
   }
 }

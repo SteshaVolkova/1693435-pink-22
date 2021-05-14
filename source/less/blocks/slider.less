@@ -50,11 +50,18 @@
   opacity: 0.1;
 }
 
+@media (min-width: @tablet-screen) {
+  .carousel__dots {
+		margin: 38px 0 0;
+  }
+}
+
 @media (min-width: @desktop-screen) {
   .carousel__dots {
     grid-column-start: 1;
     grid-column-end: -1;
     display: none;
+		margin: 38px 0 0;
   }
 
   .carousel__control {
@@ -64,5 +71,6 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
+    padding-top: 20px;
   }
 }

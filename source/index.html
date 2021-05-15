@@ -70,7 +70,7 @@
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/phone-hand-desktop.webp 1x, img/phone-hand-desktop@2x.webp 2x"/>
               <source type="image/webp" media="(min-width: 660px)" srcset="img/phone-hand-tablet.webp 1x, img/phone-hand-tablet@2x.webp 2x"/>
-              <source type="image/webp" srcset="img/phone-hand.webp 1x, img/phone-hand@2x.webp">
+              <source type="image/webp" srcset="img/phone-hand.webp 1x, img/phone-hand@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/phone-hand-desktop.png 1x, img/phone-hand-desktop@2x.png 2x"/>
               <source media="(min-width: 660px)" srcset="img/phone-hand-tablet.png 1x, img/phone-hand-tablet@2x.png 2x"/>
                 <img src="img/phone-hand.png" srcset="img/phone-hand@2x.png 2x" alt="phone in hand">
@@ -337,15 +337,15 @@
     </section>
 
     <section class="contact-info">
+      <h2 class="visually-hidden">Контактная информация для связи</h2>
       <address class="contact-info__wrapper container">
-        <h2 class="visually-hidden">Контактная информация для связи</h2>
         <p class="contact-info__title">Остались вопросы?<br>
         Свяжитесь с нами!
         </p>
         <ul class="contact-info__list">
           <li class="contact-info__item">
             <h3 class="contact-info__item-title">Звоните</h3>
-            <a href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contact-info__item">
             <h3 class="contact-info__item-title">Пишите:</h3>
@@ -360,9 +360,8 @@
     </section>
 
     <section class="map">
-      <div class="map__image">
-        <div id="map" class="google-map"></div>
-      </div>
+      <h2 class="visually-hidden">Карта с отметкой</h2>
+      <div id="map" class="google-map"></div>
     </section>
     </main>
 
@@ -414,7 +413,7 @@
       </div>
     </footer>
 
-    <script src="js/app.min.js" type="text/javascript"></script>
+    <script src="js/app.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFeH4xINWWrtTioMjF1_9Ov_4XNsGwQHc&callback=initMap&libraries=&v=weekly" async></script>
 
   </body>

@@ -11,8 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body class="page__body">
-    <header class="page-header main-nav--closed main-nav--nojs">
+  <body>
+    <header class="page-header closed nojs">
       <div class="page-header__container container">
         <a href="/" class="page-header__logo">
           <svg width="74" height="23" class="mobile-header-logo">
@@ -55,7 +55,7 @@
       </div>
     </header>
 
-    <main class="page-main main-nav--nojs">
+    <main class="page-main nojs">
     <section class="tender-offer">
       <div class="tender-offer__wrapper container">
         <h1 class="visually-hidden">Путешествуй, фотографируй и получай призы!</h1>
@@ -133,7 +133,7 @@
       <section class="contact-details">
         <h2 class="visually-hidden">Заполни контактную информацию</h2>
         <fieldset class="contact-details__wrapper container">
-          <legend class="comtact-details__legend">контактная информация</legend>
+          <legend class="contact-details__legend">контактная информация</legend>
           <div class="contact-details__input">
             <label for="phone-number" class="label-title">Номер телефона</label>
             <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста" autocomplete="tel">
@@ -180,21 +180,21 @@
 
       <div class="popup-submit">
         <div class="popup-submit__top-side">
-          <h2 class="popup-empty-inputs__title popup-title">
+          <h2 class="popup-submit__title popup-title">
             Ваша заявка отправлена
           </h2>
-          <span class="popup-empty-inputs__error-message popup-message">
+          <span class="popup-submit__error-message popup-message">
             Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
           </span>
         </div>
         <div class="popup-submit__bottom-side">
-          <button class="popup-empty-inputs__close close-popup">
+          <button class="popup-submit__close close-popup">
             <span>ЗАКРЫТЬ ОКНО</span>
           </button>
         </div>
       </div>
       <div class="popup-empty-inputs">
-        <h2 class="popup-empty-inputs__title popup-title">
+        <h2 class="popup-empty popup-title">
           Что-то пошло не так!
         </h2>
         <span class="popup-empty-inputs__error-message popup-message">

@@ -12,7 +12,7 @@
     background: @white;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
     border-radius: 5px;
-    padding: 50px 55px;
+    padding: 50px 0 0;
   }
 }
 
@@ -28,15 +28,15 @@
 
 .popup-title {
   font-weight: bold;
-  font-size: 30px;
-  line-height: 40px;
-  padding: 0 50px 25px;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 0 40px 25px;
   text-align: center;
 }
 
 .popup-message {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 13px;
+  line-height: 17px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -45,7 +45,7 @@
 
 .close-popup {
   display: block;
-  width: 300px;
+  width: 100%;
   height: 63px;
   background-color: @submit-green;
   border: 2px solid @submit-green;
@@ -70,6 +70,30 @@
     background-color: @submit-hover-green;
     border-color: @submit-hover-green;
     color: @white-opacity;
+  }
+}
+
+@media (min-width: @tablet-screen) {
+  .popup-empty-inputs,
+  .popup-submit {
+    &.show-popup {
+      padding: 50px 55px;
+    }
+  }
+
+  .close-popup {
+    width: 300px;
+  }
+
+  .popup-title {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 50px 25px;
+  }
+
+  .popup-message {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 

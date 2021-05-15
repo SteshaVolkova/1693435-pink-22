@@ -4,21 +4,21 @@ var navToggle = document.querySelector(".main-nav__toggle");
 var navOpen = document.querySelector(".main-nav__open-button");
 var navClose = document.querySelector(".main-nav__close-button");
 
-navMain.classList.remove("main-nav--nojs");
-navMain.classList.remove("main-nav--opened");
-pageMain.classList.remove("main-nav--nojs");
+navMain.classList.remove("nojs");
+navMain.classList.remove("opened");
+pageMain.classList.remove("nojs");
 
 navToggle.addEventListener("click", function () {
-  if (navMain.classList.contains("main-nav--closed")) {
-    navMain.classList.remove("main-nav--closed");
-    navMain.classList.add("main-nav--opened");
-    pageMain.classList.add("main-nav--nojs");
+  if (navMain.classList.contains("closed")) {
+    navMain.classList.remove("closed");
+    navMain.classList.add("opened");
+    pageMain.classList.add("nojs");
     navOpen.classList.add("open-menu");
     navClose.classList.add("open-menu");
   } else {
-    navMain.classList.add("main-nav--closed");
-    navMain.classList.remove("main-nav--opened");
-    pageMain.classList.remove("main-nav--nojs");
+    navMain.classList.add("closed");
+    navMain.classList.remove("opened");
+    pageMain.classList.remove("nojs");
     navOpen.classList.remove("open-menu");
     navClose.classList.remove("open-menu");
   }

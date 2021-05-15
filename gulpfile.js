@@ -14,6 +14,7 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 const concat = require('gulp-concat');
+const gulpHtmlBemValidator = require("gulp-html-bem-validator");
 
 
 // Styles
@@ -145,6 +146,12 @@ const watcher = () => {
   gulp.watch("source/js/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
+
+// Bem validator
+
+exports.bemCheck = async function () {
+  gulp.src("build/*.html").pipe(gulpHtmlBemValidator());
+};
 
 // Build
 

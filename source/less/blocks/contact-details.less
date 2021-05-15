@@ -1,5 +1,5 @@
 .contact-details {
-  padding: 42px 2px 15px;
+  padding: 37px 0 17px;
 }
 
 .contact-details__wrapper {
@@ -11,6 +11,10 @@
 }
 
 @media (min-width: @tablet-screen) {
+  .contact-details {
+    padding: 52px 0 17px;
+  }
+
   .comtact-details__legend {
     display: block;
     padding: 0 20px;
@@ -28,13 +32,13 @@
     background-color: @white;
 
     &.container {
-      padding: 51px 20px 0;
+      padding: 30px 56px 0;
     }
   }
 
   .contact-details__input {
     .label-title {
-      padding: 22px 17px 41px;
+      padding: 22px 17px 30px;
       font-weight: 400;
     }
 
@@ -71,11 +75,15 @@
     }
   }
 
+  .contact-details__wrapper.container {
+    padding: 27px 56px 0;
+  }
+
   .contact-details__input {
-    width: 45%;
+    width: 375px;
 
     .label-title {
-      padding: 22px 17px;
+      padding: 16px 19px 20px;
     }
   }
 }

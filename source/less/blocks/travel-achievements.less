@@ -2,10 +2,6 @@
   margin: 0;
   border: none;
   background-color: @light-gray;
-
-  .container {
-    padding: 42px 22px 44px;
-  }
 }
 
 .travel-achievements__headline {
@@ -13,7 +9,8 @@
   text-transform: uppercase;
   color: @link-color;
   text-align: center;
-  padding-bottom: 44px;
+  font-size: 14px;
+  padding: 41px 20px 42px;
 }
 
 @media (min-width: @tablet-screen) {
@@ -39,10 +36,10 @@
     border: 2px solid @border-lightgray;
     border-radius: 1px;
     background-color: @white;
-    margin-top: 40px;
+    margin-top: 33px;
 
     &.container {
-      padding: 51px 22px 0;
+      padding: 40px 60px 0;
     }
   }
 }
@@ -50,13 +47,18 @@
 @media (min-width: @desktop-screen) {
   .travel-achievements__wrapper {
     &.container {
-      padding: 54px 40px;
+      padding: 40px 61px 10px;
     }
+  }
+
+  .travel-achievements {
+    margin-top: 42px;
   }
 
   .travel-achievements__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 300px 280px 207px;
+    grid-template-rows: 77px;
     grid-gap: 5px 15px;
   }
 

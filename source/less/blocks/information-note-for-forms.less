@@ -1,25 +1,56 @@
 .information-note-for-forms {
-  text-align: center;
-  display: block;
   margin-bottom: 26px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 
 .information-note-for-forms__red-star {
   color: @link-color;
 }
 
+.form-submit-button {
+  display: block;
+  width: 100%;
+  height: 63px;
+  background-color: @submit-green;
+  border: 2px solid @submit-green;
+  border-radius: 1px;
+  margin: 0 auto 34px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0;
+
+  &:hover {
+    background-color: @submit-hover-green;
+    border-color: @submit-hover-green;
+  }
+
+  &:active {
+    background-color: @submit-hover-green;
+    border-color: @submit-hover-green;
+    color: @white-opacity;
+    outline: none;
+  }
+}
+
+.description-text {
+  display: none;
+}
+
 @media (min-width: @tablet-screen) {
   .form-button-info {
-    margin: 70px 0 0;
+    margin: 17px 0 0;
     display: flex;
     justify-content: space-between;
 
     &.container {
       padding: 0 2px;
-      margin-bottom: 40px;
     }
 
     .form-submit-button {
@@ -28,12 +59,29 @@
   }
 
   .information-note-for-forms {
-    padding-top: 20px;
+    padding-top: 17px;
+  }
+
+  .form-submit-button {
+    width: 48%;
   }
 }
 
 @media (min-width: @desktop-screen) {
   .form-button-info {
     width: 100%;
+  }
+
+  .form-button-info.container {
+    margin-top: 54px;
+  }
+
+  .description-text {
+    display: block;
+    padding: 0 3px;
+  }
+
+  .form-button-info .form-submit-button {
+    width: 300px;
   }
 }

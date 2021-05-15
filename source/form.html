@@ -65,9 +65,14 @@
       </div>
     </section>
 
-    <p class="form-page-title">
-    Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-    </p>
+    <div class="title-slogan">
+      <p class="form-page-title">
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      </p>
+      <p class="form-page-title info">
+      Пожалуйста, заполните форму ниже:
+      </p>
+    </div>
 
     <form class="form-block container" name="form" onsubmit='return validate()' action="https://www.google.com/search?q=htmlacademy" method="post">
       <section class="personal-information">
@@ -132,7 +137,7 @@
           </div>
           <div class="contact-details__input">
             <label for="email-address" class="label-title">Адрес почты</label>
-            <input type="email" id="email-address" name="email-address" placeholder="Введите ваше имя *" autocomplete="email">
+            <input type="email" id="email-address" name="email-address" placeholder="Введите почту *" autocomplete="email">
           </div>
         </fieldset>
       </section>
@@ -166,7 +171,7 @@
       </section>
       <div class="form-button-info container">
         <input class="form-submit-button" type="submit" value="Отправить форму">
-        <small class="information-note-for-forms"><span class="information-note-for-forms__red-star">*</span> — обязательные поля</small>
+        <small class="information-note-for-forms"><span class="information-note-for-forms__red-star">*</span> — обязательные <span class="description-text">для заполнения</span> поля</small>
       </div>
 
       <div class="popup-submit">

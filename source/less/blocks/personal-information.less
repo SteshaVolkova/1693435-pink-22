@@ -1,24 +1,52 @@
 .personal-information__wrapper {
   border: none;
   padding: 0;
-  margin: 0 0 15px;
-
-  &.container {
-    padding: 0;
-  }
+  margin: 0 0 18px;
 }
 
 .form-page-title {
-  padding: 54px 0 55px;
+  padding: 45px 20px 41px;
   text-align: center;
   line-height: 30px;
   font-size: 14px;
+
+  &.info {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-screen) {
   .form-page-title {
-    padding: 100px 65px 82px;
+    padding: 91px 65px 0;
     font-size: 18px;
     font-weight: 400;
+
+    &.info {
+      display: block;
+      padding: 0 0 63px;
+    }
+  }
+
+  .personal-information__wrapper.container {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .form-page-title {
+    padding: 0 6px 0;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline;
+
+    &.info {
+      display: inline;
+      padding: 0;
+    }
+  }
+
+  .title-slogan {
+    padding: 91px 218px 66px;
+    text-align: center;
   }
 }

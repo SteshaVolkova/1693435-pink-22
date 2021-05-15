@@ -20,7 +20,6 @@
 .contact-details__input {
   display: flex;
   flex-direction: column;
-  margin: 0 2px;
 }
 
 input[type="text"],
@@ -28,7 +27,7 @@ input[type="tel"],
 input[type="email"] {
   border: 2px solid @border-lightgray;
   border-radius: 1px;
-  margin: 17px 0 29px;
+  margin: 12px 0 23px;
   outline: none;
 
   &:hover {
@@ -44,34 +43,8 @@ input[type="email"] {
 input[placeholder] {
   font-weight: 400;
   font-size: 18px;
-  padding: 17px 20px;
+  padding: 20px 16px;
   color: @dark-border-blue;
-}
-
-.form-submit-button {
-  display: block;
-  width: 276px;
-  height: 59px;
-  background-color: @submit-green;
-  border: 2px solid @submit-green;
-  border-radius: 1px;
-  margin: 0 auto 46px;
-  color: white;
-  font-size: 18px;
-  font-weight: 700;
-  outline: none;
-
-  &:hover {
-    background-color: @submit-hover-green;
-    border-color: @submit-hover-green;
-  }
-
-  &:active {
-    background-color: @submit-hover-green;
-    border-color: @submit-hover-green;
-    color: @white-opacity;
-    outline: none;
-  }
 }
 
 input[type="submit"][disabled="disabled"] {
@@ -133,6 +106,7 @@ input[type="submit"][disabled="disabled"] {
 
   input[type="text"] {
     width: 100%;
+    margin: 12px 0 37px;
   }
 }
 
@@ -140,7 +114,11 @@ input[type="submit"][disabled="disabled"] {
   .form-block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 69px 74px;
+    grid-gap: 9px 63px;
+
+    &.container {
+      padding: 0;
+    }
   }
 
   .contact-details,
@@ -149,5 +127,13 @@ input[type="submit"][disabled="disabled"] {
   .form-button-info {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+
+  input[type="text"] {
+    margin: 18px 0 37px;
+  }
+
+  .label-title {
+    padding: 43px 20px 0 0;
   }
 }

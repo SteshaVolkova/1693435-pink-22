@@ -5,8 +5,9 @@
   &.show-popup {
     display: block;
     position: fixed;
-    width: 460px;
-    left: 27%;
+    width: auto;
+    left: 15%;
+    right: 15%;
     top: 30%;
     background: @white;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -39,13 +40,13 @@
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 0 20px 35px;
+  padding: 0 20px 32px;
 }
 
 .close-popup {
   display: block;
-  width: 269px;
-  height: 59px;
+  width: 300px;
+  height: 63px;
   background-color: @submit-green;
   border: 2px solid @submit-green;
   border-radius: 1px;
@@ -69,5 +70,24 @@
     background-color: @submit-hover-green;
     border-color: @submit-hover-green;
     color: @white-opacity;
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .popup-empty-inputs,
+  .popup-submit {
+    &.show-popup {
+      left: 210px;
+      right: 210px;
+      width: auto;
+    }
+  }
+
+  .popup-title {
+    padding: 0 50px 21px;
+  }
+
+  .popup-message {
+    padding: 0 130px 113px;
   }
 }

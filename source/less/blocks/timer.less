@@ -5,18 +5,41 @@
 @media (min-width: @tablet-screen) {
   .timer {
     display: block;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 80px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: @white;
+    }
   }
 
   .timer__wrapper {
     display: flex;
 
     &.container {
-      padding: 54px 20px;
+      padding: 96px 20px;
+      background-color: @white;
     }
   }
 
   .timer__image {
     margin-right: 72px;
+
+    img {
+      width: 238px;
+      z-index: 1;
+      position: absolute;
+      top: 55px;
+    }
+  }
+
+  .timer__scientist-record {
+    margin-left: 239px;
   }
 
   .timer__title {
@@ -26,14 +49,16 @@
   }
 
   .timer__title:last-of-type {
-    margin-bottom: 24px;
+    margin-bottom: 10px;
+    padding-right: 100px;
   }
 
   .timer__scientist-thing {
     font-size: 14px;
     font-weight: normal;
     line-height: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
+    margin-right: 12px;
     color: @dark-border-blue;
   }
 
@@ -50,10 +75,33 @@
   .timer {
     padding: 17px 130px 67px;
     background-color: @light-gray;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .timer__wrapper.container {
+    padding: 30px 20px 85px;
+    background-color: @light-gray;
   }
 
   .timer__image img {
-    height: 345px;
+    width: 25%;
+    top: 10px;
+    left: 130px;
+  }
+
+  .timer__title:last-of-type {
+    margin-left: 10px;
+  }
+
+  .timer__scientist-thing {
+    padding: 25px 15px 30px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 0;
   }
 
   .timer__title {
@@ -64,15 +112,9 @@
     margin-bottom: 37px;
   }
 
-  .timer__scientist-thing {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 47px;
-  }
-
   .timer__scientist-record {
-    padding-top: 97px;
+    padding-top: 60px;
+    margin-left: 279px;
 
     a {
       font-size: 18px;

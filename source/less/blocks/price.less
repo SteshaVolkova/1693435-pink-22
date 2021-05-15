@@ -1,124 +1,200 @@
+/* ___ Переменные ___ */
+@mobile-side-offset: 20px;
+@container-max-width: 940px + 2 * @mobile-side-offset;
+
 .price {
-  background-color: @light-gray;
-  padding: 100px 0;
+  padding: 129px 0 50px;
 }
 
-.price__wrapper.container {
-  padding: 0;
+.price__wrapper {
+  max-width: 100%;
 }
 
-.price__wrapper .slides {
-  margin: 0 auto;
+.price__table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
 }
 
-th.price__title {
+.price__tariff {
   background-color: @dark-border-blue;
-  padding: 15px 0;
-}
-
-.hit-price {
-  overflow: hidden;
-}
-
-.hit-price::before {
-  content: "ХИТ";
-  display: block;
-  color: white;
-  background-color: @link-color;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  transform: rotate(318deg);
-  position: absolute;
-  width: 120px;
-  top: 10px;
-  left: -30px;
-}
-
-h2.price__title {
   color: @white;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-transform: uppercase;
+  padding: 14px 8px 26px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid @border-lightgray;
+  scroll-snap-align: start;
 }
 
-.price__option-name {
-  display: none;
+.price__price {
+  font-weight: 300;
+  margin: 0;
+}
+
+.price-dots {
+  margin: 43px 0 0;
 }
 
 .price__option-content {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background-color: @white;
 
   span {
-    padding-top: 5px;
     text-transform: uppercase;
   }
 }
 
-.price__sum {
-  color: @white;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 30px;
-}
-
-.price__transparent-block {
-  display: none;
-}
-
 .price__option-enable {
   background-image: url("../../img/yes.svg");
+  display: block;
+  height: 25px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .price__option-disable {
   background-image: url("../../img/no.svg");
-}
-
-.price__option-enable,
-.price__option-disable {
   display: block;
-  height: 40px;
+  height: 25px;
   width: 40px;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.price__hit-ribbon {
+  background-color: @link-color;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: rotate(-45deg) translate(-22px, -10px);
+  width: 86px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.price__feature,
+.price__value {
+  border: 2px solid @border-lightgray;
+  height: 45px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  background-color: @white;
+  color: @dark-border-blue;
+  padding: 13px 13px 15px 22px;
+}
+
+.price__feature {
+  text-align: left;
+}
+
+.price__value {
+  text-align: center;
+}
+
+.price__value-wrapper {
+  display: flex;
+  flex: wrap;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-between;
+
+  &::before {
+    content: attr(data-feature);
+  }
 }
 
 @media (min-width: @tablet-screen) {
-  .price__wrapper.container {
-    padding: 0 20px;
-
-    .slider__toggles {
-      display: none;
-    }
+  .price {
+    background-color: @light-gray;
+    padding: 95px 0 50px;
   }
 
-  .price__title,
-  .price__option-content,
-  .price__option-name {
-    width: 155px;
+  .price__tariff {
+    padding: 14px 8px 12px;
   }
 
-  .price__wrapper.slider {
-    width: 100%;
+  .price__feature,
+  .price__value {
+    padding: 7px 16px 7px 16px;
   }
 
-  .price__transparent-block {
-    display: block;
+  .price__price {
+    line-height: 24px;
+    letter-spacing: 1px;
   }
 
-  .price__option-name {
-    background-color: @white;
-    display: table-cell;
+  .price__hit-ribbon {
+    top: 6px;
+    left: 2px;
+    font-size: 15px;
+    line-height: 19px;
   }
 
-  .price__option-value {
-    background-color: @white;
+  .price__dots {
+    display: none;
+  }
+
+  .price__option-content {
+    justify-content: center;
 
     span:first-child {
       display: none;
     }
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .price {
+    padding: 155px 0 97px;
+  }
+
+  .price__tariff {
+    font-size: 18px;
+    padding: 14px 8px 26px;
+  }
+
+  .price__feature,
+  .price__value {
+    padding: 14px 16px 14px 20px;
+    font-size: 18px;
+  }
+
+  .price__hit-ribbon {
+    top: 9px;
+    left: -4px;
+    line-height: 23px;
+    width: 110px;
+  }
+
+  .price__price {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: @only-mobile-screen) {
+  .price__wrapper {
+    display: grid;
+    grid-template-columns: 300% @mobile-side-offset; // и after чтобы не съедался отсуп справа
+    scroll-padding: @mobile-side-offset;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .price__empty-cell,
+  .price__feature {
+    display: none;
   }
 }

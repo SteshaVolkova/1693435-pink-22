@@ -21,10 +21,6 @@
   }
 }
 
-.main-nav__open-button:hover {
-  color: @link-color;
-}
-
 .tablet-header-logo,
 .desktop-header-logo {
   display: none;
@@ -53,10 +49,22 @@
   width: 23px;
   float: right;
   outline: none;
+  color: @white;
 
   &.open-menu {
     display: block;
   }
+}
+
+.main-nav__close-button:hover,
+.main-nav__open-button:hover {
+  color: @link-color;
+}
+
+.main-nav__close-button:active,
+.main-nav__open-button:active {
+  color: @white;
+  opacity: 0.3;
 }
 
 .page-header__container {
@@ -69,6 +77,16 @@
   padding: 0;
   height: 23px;
   width: 75px;
+  color: @white;
+}
+
+.page-header__logo:hover {
+  color: @link-color;
+}
+
+.page-header__logo:active {
+  color: @white;
+  opacity: 0.3;
 }
 
 .main-nav__wrapper {
@@ -81,6 +99,7 @@
   border-radius: 0;
   height: 24px;
   width: 50px;
+  padding: 0;
   background-color: transparent;
 }
 
@@ -111,7 +130,7 @@
     font-weight: bold;
     background-color: @dark-border-blue;
     color: white;
-    height: 63px;
+    height: 64px;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     border-bottom: 1px solid @black;
   }
@@ -146,6 +165,10 @@
     display: none;
   }
 
+  .page-header__container.container {
+    padding: 0;
+  }
+
   .tablet-header-logo {
     display: block;
   }
@@ -160,7 +183,7 @@
   }
 
   .main-nav__toggle {
-    margin-top: 10px;
+    margin-top: 16px;
     padding: 0;
   }
 
@@ -196,7 +219,7 @@
     }
 
     .main-nav {
-      width: 70%;
+      width: 66%;
     }
 
     .main-nav__toggle {

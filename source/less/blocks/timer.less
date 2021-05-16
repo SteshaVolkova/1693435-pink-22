@@ -77,7 +77,7 @@
 
 @media (min-width: @desktop-screen) {
   .timer {
-    padding: 17px 130px 67px;
+    padding: 0 130px 67px;
     background-color: @light-gray;
 
     &::before {
@@ -86,14 +86,17 @@
   }
 
   .timer__wrapper.container {
-    padding: 30px 20px 85px;
+    padding: 11px 0 38px;
     background-color: @light-gray;
   }
 
+  .timer__image {
+    margin-right: 71px;
+  }
+
   .timer__image img {
-    width: 300px;
-    top: 10px;
-    left: 130px;
+    width: 298px;
+    position: static;
   }
 
   .timer__title:last-of-type {
@@ -129,8 +132,8 @@
   }
 
   .timer__scientist-record {
-    padding-top: 60px;
-    margin-left: 279px;
+    padding-top: 97px;
+    margin-left: 0;
 
     a {
       font-size: 18px;

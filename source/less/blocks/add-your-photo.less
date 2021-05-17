@@ -23,14 +23,15 @@
   display: inline-block;
 }
 
-.tab input[type="radio"] {
-  display: none;
+.add-your-photo__input[checked] ~ .tab-title {
+  opacity: 1;
 }
 
 .tab-title {
   padding: 5px 0;
   border-bottom: none;
   color: @dark-border-blue;
+  opacity: 0.3;
 
   &.selected {
     color: @link-color;
@@ -241,6 +242,7 @@ input[type="range"]::-ms-thumb {
   .tab-title {
     margin: 3px 0 0;
     padding: 0;
+    opacity: 1;
 
     svg {
       height: 24px;

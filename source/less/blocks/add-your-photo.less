@@ -77,6 +77,15 @@
     font-weight: bold;
     color: @link-color;
   }
+
+  &.add-your-photo__cancellation {
+    margin-top: 12px;
+    border-color: @dark-border-blue;
+
+    span {
+      color: @dark-border-blue;
+    }
+  }
 }
 
 .add-your-photo__cancellation {
@@ -179,8 +188,22 @@ input[type="range"]::-ms-thumb {
     grid-gap: 20px;
 
     &.container {
-      padding: 57px 20px 26px;
+      padding: 57px 20px 30px;
     }
+  }
+
+  .add-your-photo__form-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .add-your-photo__buttons {
+    margin-top: auto;
+  }
+
+  .add-your-photo__submit.add-your-photo__cancellation {
+    margin-bottom: 3px;
   }
 
   .add-your-photo__tabs-block {
@@ -251,8 +274,8 @@ input[type="range"]::-ms-thumb {
     grid-template-columns: 300px auto;
 
     &.container {
-      padding: 47px 66px 54px 79px;
-      margin-bottom: 30px;
+      padding: 47px 61px 54px 80px;
+      margin-bottom: 32px;
     }
   }
 
@@ -310,12 +333,26 @@ input[type="range"]::-ms-thumb {
 
   .add-your-photo__submit,
   .add-your-photo__cancellation {
-    margin: 0;
     width: 100%;
+    margin: 0 0 3px;
+
+    &.add-your-photo__cancellation {
+      margin-top: 0;
+    }
   }
 
   .tab-title {
     height: 44px;
     width: 44px;
+  }
+
+  input[type="range"] {
+    width: 289px;
+    margin: 10px 0 10px 20px;
+  }
+
+  .photo-contrast[type="range"] {
+    width: 289px;
+    margin: 10px 0 10px 15px;
   }
 }

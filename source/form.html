@@ -75,22 +75,22 @@
       </p>
     </section>
 
-    <form class="form-block container" name="form" onsubmit='return validate()' action="https://www.google.com/search?q=htmlacademy" method="post">
+    <form class="competition-block container" name="form" onsubmit='return validate()' action="https://www.google.com/search?q=htmlacademy" method="post">
       <section class="personal-information">
         <h2 class="visually-hidden">Заполни своё ФИО</h2>
         <fieldset class="personal-information__wrapper container">
           <legend class="visually-hidden">Поделись историей и выйграй!</legend>
           <div class="personal-information__input">
             <label for="last-name" class="label-title">Фамилия:</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию *" autocomplete="family-name">
+            <input type="text" class="personal-information__input-text" id="last-name" name="last-name" placeholder="Укажите фамилию *" autocomplete="family-name">
           </div>
           <div class="personal-information__input">
             <label for="first-name" class="label-title">Имя:</label>
-            <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" autocomplete="given-name">
+            <input type="text" class="personal-information__input-text" id="first-name" name="first-name" placeholder="Введите ваше имя *" autocomplete="given-name">
           </div>
           <div class="personal-information__input">
             <label for="additional-name" class="label-title">Отчество:</label>
-            <input type="text" id="additional-name" name="additional-name" placeholder="Ну и отчество тоже" autocomplete="additional-name" >
+            <input type="text" class="personal-information__input-text" id="additional-name" name="additional-name" placeholder="Ну и отчество тоже" autocomplete="additional-name" >
           </div>
         </fieldset>
       </section>
@@ -136,12 +136,12 @@
         <fieldset class="contact-details__wrapper container">
           <legend class="contact-details__legend">контактная информация</legend>
           <div class="contact-details__input">
-            <label for="phone-number" class="label-title">Номер телефона</label>
-            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста" autocomplete="tel">
+            <label for="phone-number" class="contact-details__label-title">Номер телефона</label>
+            <input type="tel" class="contact-details__input-text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста" autocomplete="tel">
           </div>
           <div class="contact-details__input">
-            <label for="email-address" class="label-title">Адрес почты</label>
-            <input type="email" id="email-address" name="email-address" placeholder="Введите почту *" autocomplete="email">
+            <label for="email-address" class="contact-details__label-title">Адрес почты</label>
+            <input type="email" class="contact-details__input-text" id="email-address" name="email-address" placeholder="Введите почту *" autocomplete="email">
           </div>
         </fieldset>
       </section>

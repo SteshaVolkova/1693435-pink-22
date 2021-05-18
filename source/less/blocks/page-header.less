@@ -47,12 +47,12 @@
   display: none;
   height: 23px;
   width: 23px;
-  float: right;
   outline: none;
   color: @white;
+  text-align: right;
 
   &.open-menu {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -101,6 +101,7 @@
   width: 50px;
   padding: 0;
   background-color: transparent;
+  text-align: right;
 }
 
 .page-header.nojs,
@@ -116,6 +117,18 @@
     left: 0;
     right: 0;
     top: 69px;
+  }
+
+  .main-nav__toggle {
+    text-align: right;
+  }
+
+  .main-nav__open-button {
+    display: none;
+  }
+
+  .main-nav__close-button {
+    display: inline-block;
   }
 
   .main-nav__list {
@@ -200,6 +213,7 @@
 @media (min-width: @desktop-screen) {
   .page-header,
   .page-header.nojs,
+  .page-header.opened,
   .page-header.opened.nojs {
     padding: 27px 0 30px;
     background-color: @black-opacity;

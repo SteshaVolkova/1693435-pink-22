@@ -1,0 +1,95 @@
+.tabs {
+  position: relative;
+}
+
+.tab-title {
+  display: inline-block;
+}
+
+.add-your-photo__input[checked] ~ .tab-title {
+  opacity: 1;
+}
+
+.tab-title {
+  padding: 5px 0;
+  border-bottom: none;
+  color: @dark-border-blue;
+  opacity: 0.3;
+
+  &.selected {
+    color: @link-color;
+  }
+
+  &.contast-icon {
+    padding: 10px 0 0;
+  }
+}
+
+.tab-content {
+  position: absolute;
+  left: 0;
+  display: none;
+  padding-top: 17px;
+  width: 94%;
+}
+
+.tab-content.selected {
+  display: block;
+  text-align: center;
+}
+
+.tab:checked + .tab-title {
+  top: 1px;
+  z-index: 1;
+}
+
+.tab:checked ~ .tab-content {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: @tablet-screen) {
+  .tab-content {
+    display: block;
+    text-align: center;
+    position: static;
+    padding: 0;
+  }
+
+  .tab-title {
+    margin: 3px 0 0;
+    padding: 0;
+    opacity: 1;
+
+    svg {
+      height: 24px;
+      width: 22px;
+      color: @link-color;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .tab-content {
+    padding: 16px 0;
+  }
+
+  .tab-title svg {
+    height: 54px;
+    width: 42px;
+  }
+
+  .tab-title.contast-icon svg {
+    height: 58px;
+    width: 46px;
+  }
+
+  .tab-title {
+    height: 44px;
+    width: 44px;
+  }
+}

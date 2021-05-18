@@ -6,7 +6,7 @@
   position: relative;
 
   .photo-catalog__content {
-    margin: 0 20px 20px;
+    margin: 0 20px 22px;
   }
 
   .photo-catalog__user-name {
@@ -29,10 +29,9 @@
 
 .photo-block__tag-wrapper {
   position: absolute;
-  top: 0;
+  top: 5px;
   pointer-events: none;
   right: 0;
-  left: 0;
 }
 
 .photo-block__tag {
@@ -41,9 +40,8 @@
   line-height: 2;
   text-transform: uppercase;
   background-color: @link-color;
-  padding: 7px 20px 5px;
+  padding: 8px 20px 11px 19px;
   color: @white;
-  float: right;
 }
 
 .photo-catalog__list {
@@ -198,7 +196,7 @@
   }
 
   .photo-block__tag-wrapper {
-    top: 57px;
+    top: 62px;
   }
 
   .photo-catalog__item {
@@ -240,6 +238,13 @@
 
   .photo-block__tag-wrapper {
     top: 54px;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .photo-block__tag {
+    padding: 6px 19px 6px 19px;
   }
 
   .photo-catalog__like {

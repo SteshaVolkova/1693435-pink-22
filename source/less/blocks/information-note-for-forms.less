@@ -39,6 +39,10 @@
   }
 }
 
+.form-submit-button[disabled="disabled"] {
+  background-color: @border-lightgray;
+}
+
 .description-text {
   display: none;
 }
@@ -48,6 +52,7 @@
     margin: 17px 0 45px;
     display: flex;
     justify-content: space-between;
+    order: 6;
 
     &.container {
       padding: 0 2px;
@@ -70,6 +75,8 @@
 @media (min-width: @desktop-screen) {
   .form-button-info {
     width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .form-button-info.container {

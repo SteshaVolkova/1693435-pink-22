@@ -57,6 +57,7 @@
 @media (min-width: @tablet-screen) {
   .user-emotions {
     padding: 56px 2px 49px;
+    order: 5;
   }
 
   .user-emotions__headign {
@@ -92,10 +93,12 @@
 @media (min-width: @desktop-screen) {
   .user-emotions {
     padding: 0 2px;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .user-emotions__wrapper.container {
-    padding: 30px 54px 44px;
+    padding: 17px 54px;
     margin-top: 42px;
   }
 

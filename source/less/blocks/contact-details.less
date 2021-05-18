@@ -53,6 +53,7 @@
 @media (min-width: @tablet-screen) {
   .contact-details {
     padding: 52px 0 17px;
+    order: 3;
   }
 
   .contact-details__legend {
@@ -82,6 +83,8 @@
   }
 
   .contact-details__input {
+    flex-direction: column-reverse;
+
     input[type="tel"],
     input[type="email"] {
       margin: 0;
@@ -105,6 +108,12 @@
 @media (min-width: @desktop-screen) {
   .contact-details {
     padding: 0 2px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .contact-details__input-text[placeholder] {
+    padding: 21px 20px;
   }
 
   .contact-details__wrapper {
@@ -113,7 +122,7 @@
   }
 
   .contact-details__wrapper.container {
-    padding: 27px 56px 0;
+    padding: 26px 56px 0;
   }
 
   .contact-details__input {

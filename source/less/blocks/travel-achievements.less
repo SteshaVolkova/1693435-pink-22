@@ -32,6 +32,10 @@
     clip-path: inherit;
   }
 
+  .travel-achievements {
+    order: 4;
+  }
+
   .travel-achievements__headline {
     display: none;
   }
@@ -51,12 +55,14 @@
 @media (min-width: @desktop-screen) {
   .travel-achievements__wrapper {
     &.container {
-      padding: 40px 61px 10px;
+      padding: 38px 61px 7px;
     }
   }
 
   .travel-achievements {
     margin-top: 42px;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .travel-achievements__grid {

@@ -47,6 +47,12 @@
   color: @dark-border-blue;
 }
 
+.personal-information__label-title {
+  color: @link-color;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 21px;
+}
 
 @media (min-width: @tablet-screen) {
   .title-slogan__text {
@@ -60,6 +66,14 @@
     }
   }
 
+  .personal-information {
+    order: 1;
+  }
+
+  .personal-information__input {
+    flex-direction: row;
+  }
+
   .personal-information__wrapper.container {
     padding: 0;
   }
@@ -67,6 +81,11 @@
   .personal-information__input-text {
     width: 100%;
     margin: 12px 0 37px;
+  }
+
+  .personal-information__label-title {
+    padding: 22px 17px 30px;
+    font-weight: 400;
   }
 }
 
@@ -93,5 +112,13 @@
 
   .personal-information__input-text {
     margin: 18px 0 37px;
+  }
+
+  .personal-information__label-title {
+    padding: 44px 16px 20px 2px;
+  }
+
+  .personal-information__input-text[placeholder] {
+    padding: 19px 21px;
   }
 }

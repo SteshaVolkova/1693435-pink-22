@@ -2,47 +2,7 @@
   padding: 0;
 }
 
-textarea,
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-  border: 2px solid @border-lightgray;
-  border-radius: 1px;
-  margin: 12px 0 23px;
-  outline: none;
-
-  &:hover {
-    border-color: @dark-border-blue;
-  }
-
-  &:active,
-  &:focus {
-    border-color: @link-color;
-  }
-}
-
-input[placeholder] {
-  font-weight: 400;
-  font-size: 18px;
-  padding: 20px 18px;
-  color: @dark-border-blue;
-}
-
-textarea::placeholder,
-input::placeholder {
-  color: @dark-border-blue;
-}
-
-input[type="submit"][disabled="disabled"] {
-  background-color: @border-lightgray;
-}
-
 @media (min-width: @tablet-screen) {
-  .selection-os__headign.visually-hidden,
-  .travel-achievements__headline.visually-hidden {
-    display: block;
-  }
-
   .competition-block {
     display: flex;
     flex-direction: column;
@@ -51,64 +11,16 @@ input[type="submit"][disabled="disabled"] {
       padding: 0 20px;
     }
   }
-
-  .personal-information {
-    order: 1;
-  }
-
-  .selection-os {
-    order: 2;
-  }
-
-  .contact-details {
-    order: 3;
-  }
-
-  .travel-achievements {
-    order: 4;
-  }
-
-  .user-emotions {
-    order: 5;
-  }
-
-  .form-button-info {
-    order: 6;
-  }
-
-  .personal-information__input {
-    flex-direction: row;
-  }
-
-  .contact-details__input {
-    flex-direction: column-reverse;
-  }
-
-  .label-title {
-    padding: 35px 20px 0 0;
-  }
 }
 
 @media (min-width: @desktop-screen) {
   .competition-block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 9px 63px;
+    grid-gap: 13px 63px;
 
     &.container {
       padding: 0;
     }
-  }
-
-  .contact-details,
-  .travel-achievements,
-  .user-emotions,
-  .form-button-info {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
-  .label-title {
-    padding: 43px 20px 0 0;
   }
 }

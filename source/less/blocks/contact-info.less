@@ -7,7 +7,7 @@
     content: "";
     display: block;
     background-color: @white;
-    clip-path: polygon(0 0, 100% 0%, 100% 0, 50% 60%, 0 0);
+    clip-path: polygon(50% 64%, 0 0, 100% 0);
     height: 50px;
     position: absolute;
     bottom: -49px;
@@ -62,8 +62,8 @@
 @media (min-width: @tablet-screen) {
   .contact-info::after {
     height: 90px;
-    bottom: -89px;
-    clip-path: polygon(0 0, 100% 0%, 100% 0, 50% 80%, 0 0);
+    bottom: -90px;
+    clip-path: polygon(50% 74%, 0 0, 100% 0);
   }
 
   .contact-info {
@@ -112,7 +112,9 @@
   }
 
   .contact-info::after {
-    clip-path: polygon(0 0, 100% 0%, 100% 0, 50% 110%, 0 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    height: 100px;
+    bottom: -98px;
   }
 
   .contact-info__list {

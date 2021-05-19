@@ -1,4 +1,4 @@
-.information-note-for-forms {
+.form-button-info__information-note-for-forms {
   margin-bottom: 18px;
   font-size: 14px;
   line-height: 30px;
@@ -7,11 +7,11 @@
   justify-content: center;
 }
 
-.information-note-for-forms__red-star {
+.form-button-info__information-note-for-forms__red-star {
   color: @link-color;
 }
 
-.form-submit-button {
+.form-button-info__form-submit-button {
   display: block;
   width: 100%;
   height: 63px;
@@ -39,8 +39,11 @@
   }
 }
 
-.form-submit-button[disabled="disabled"] {
+.form-button-info__form-submit-button[disabled="disabled"] {
   background-color: @border-lightgray;
+  border-color: @border-lightgray;
+  color: @white;
+  opacity: @white-opacity;
 }
 
 .description-text {
@@ -58,16 +61,16 @@
       padding: 0 2px;
     }
 
-    .form-submit-button {
+    .form-button-info__form-submit-button {
       margin: 0;
     }
   }
 
-  .information-note-for-forms {
+  .form-button-info__information-note-for-forms {
     padding-top: 17px;
   }
 
-  .form-submit-button {
+  .form-button-info__form-submit-button {
     width: 48%;
   }
 }
@@ -88,7 +91,7 @@
     padding: 0 3px;
   }
 
-  .form-button-info .form-submit-button {
+  .form-button-info .form-button-info__form-submit-button {
     width: 300px;
   }
 }

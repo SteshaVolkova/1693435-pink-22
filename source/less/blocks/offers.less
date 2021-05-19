@@ -177,16 +177,10 @@
     padding-top: 301px;
   }
 
-  .offers__list.container {
-    position: relative;
-    width: 892px;
-    height: 600px;
-  }
-
   .offer:first-child {
     background-image: url("../../img/tel1.png");
-    position: absolute;
-    left: 0;
+    position: static;
+    z-index: 1;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/tel1@2x.png");
@@ -196,7 +190,8 @@
 
   .offer:nth-child(2) {
     background-image: url("../../img/tel2.png");
-    position: absolute;
+    position: static;
+    z-index: 1;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/tel2@2x.png");
@@ -206,8 +201,8 @@
 
   .offer:last-child {
     background-image: url("../../img/tel3.png");
-    position: absolute;
-    right: 0;
+    position: static;
+    z-index: 1;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/tel3@2x.png");

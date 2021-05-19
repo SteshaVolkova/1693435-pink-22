@@ -84,7 +84,7 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
+  return gulp.src("source/icons/*.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))
@@ -97,12 +97,8 @@ exports.sprite = sprite;
 // Copy
 
 const copy = (done) => {
-  gulp.src([
-    "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
-    "source/img/**/*.svg",
-    "!source/img/icons/*.svg"
-  ], {
+  gulp.src(["source/assets/**/*",
+  "!source/assets/**/README"], {
     base: "source"
   })
     .pipe(gulp.dest("build"))
@@ -146,6 +142,7 @@ const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
   gulp.watch("source/js/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch("source/icons/*.svg", gulp.series(sprite, reload));
 }
 
 // Bem validator

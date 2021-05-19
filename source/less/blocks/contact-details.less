@@ -85,12 +85,6 @@
   .contact-details__input {
     flex-direction: column-reverse;
 
-    input[type="tel"],
-    input[type="email"] {
-      margin: 0;
-      background-size: 60px;
-    }
-
     input[type="tel"] {
       background-image: url("../../img/phone-input.svg");
       background-repeat: no-repeat;
@@ -103,6 +97,15 @@
       background-position: right;
     }
   }
+
+  .contact-details__input-text {
+    margin: 0;
+    background-size: 60px;
+  }
+
+  .contact-details__input-text[placeholder] {
+    padding: 20px 85px 20px 18px;
+  }
 }
 
 @media (min-width: @desktop-screen) {
@@ -113,12 +116,13 @@
   }
 
   .contact-details__input-text[placeholder] {
-    padding: 21px 20px;
+    padding: 20px 80px 20px 20px;
   }
 
   .contact-details__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .contact-details__wrapper.container {

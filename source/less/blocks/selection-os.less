@@ -29,6 +29,11 @@
   color: #283645;
 }
 
+.selection-os__element label:focus {
+  outline: none;
+}
+
+input[type="radio"]:focus + label::before,
 .selection-os__element label:hover::before {
   border-color: @dark-border-blue;
 }
@@ -126,6 +131,6 @@
 
   .selection-os__element input[type="radio"]:checked + label::before {
     background-size: 15px;
-    background-position: 11px 13px;
+    background-position: 12px;
   }
 }

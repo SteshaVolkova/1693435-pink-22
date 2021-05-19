@@ -11,6 +11,17 @@
   font-size: 18px;
   font-weight: 400;
   color: @dark-border-blue;
+  position: relative;
+  padding: 10px 0 0 57px;
+}
+
+.custom-checkbox + label:focus {
+  border: none;
+  outline: none;
+}
+
+.custom-checkbox:focus + label::before {
+  border-color: @dark-border-blue;
 }
 
 .custom-checkbox + label:hover::before {
@@ -35,6 +46,9 @@
   background-position: center center;
   background-size: 50% 50%;
   background-color: @white;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .custom-checkbox:checked + label::before {

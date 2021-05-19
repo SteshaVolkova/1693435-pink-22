@@ -2,6 +2,7 @@
   background-image: url("../../img/back-mobile.png");
   background-size: 120%;
   background-repeat: no-repeat;
+  background-color: @dark-border-blue;
   padding-top: 30px;
 
   @media (min-resolution: 2dppx) {
@@ -40,6 +41,7 @@
 
 .download-the-app__download-bottom {
   text-decoration: none;
+  border: 3px solid @white;
 
   span {
     text-align: center;
@@ -52,6 +54,21 @@
 
   &:hover {
     text-decoration: none;
+    background-color: @white;
+    color: @link-color;
+  }
+
+  &:hover span {
+    color: @link-color;
+  }
+
+  &:active {
+    background-color: @white;
+    opacity: 1;
+  }
+
+  &:active span {
+    opacity: 0.7;
   }
 }
 

@@ -9,7 +9,6 @@ body {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
 }
 
-
 p,
 b,
 a,
@@ -24,10 +23,6 @@ h2,
 h3,
 figure {
   margin: 0;
-}
-
-a {
-  font-weight: 300;
 }
 
 a:hover {
@@ -51,7 +46,8 @@ a:active {
 }
 
 @media (min-width: @desktop-screen) {
-  .page-main.main-nav--nojs {
+  .page-main,
+  .page-main.nojs {
     padding-top: 0;
   }
 }

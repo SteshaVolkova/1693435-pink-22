@@ -39,30 +39,36 @@
 
 .add-your-photo__submit {
   border: 3px solid @link-color;
+  color: @link-color;
 
-  &:hover {
-    background-color: @link-color;
+  span {
+    color: inherit;
   }
 
-  &:hover span {
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: @link-color;
     color: @white;
   }
 
   &:active {
     background-color: @link-color;
-    outline: none;
+    color: rgba(@white, 0.3);
   }
 
-  &:active span {
-    color: @white;
-    opacity: 0.3;
+  &:focus {
+    outline: none;
   }
 }
 
 .add-your-photo__cancellation {
   margin-top: 12px;
   border: 3px solid @dark-border-blue;
-  opacity: 0.1;
+
+  &:disabled {
+    opacity: 0.1;
+  }
 
   span {
     color: @dark-border-blue;
@@ -73,11 +79,13 @@
     background-color: transparent;
   }
 
+  &:focus,
   &:active {
     background-color: @dark-border-blue;
     opacity: 0.3;
   }
 
+  &:focus span,
   &:active span {
     color: @white;
     opacity: 0.3;

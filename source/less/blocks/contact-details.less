@@ -36,17 +36,19 @@
   &:focus {
     border-color: @link-color;
   }
-}
 
-.contact-details__input-text[placeholder] {
-  font-weight: 400;
-  font-size: 18px;
-  padding: 20px 18px;
-  color: @dark-border-blue;
-}
+  &[placeholder] {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px 18px;
+    color: @dark-border-blue;
+    opacity: 1;
+  }
 
-.contact-details__input-text::placeholder {
-  color: @dark-border-blue;
+  &::placeholder {
+    color: @dark-border-blue;
+    opacity: 1;
+  }
 }
 
 
@@ -89,18 +91,19 @@
       background-image: url("../../img/phone-input.svg");
       background-repeat: no-repeat;
       background-position: right;
+      background-size: contain;
     }
 
     input[type="email"] {
       background-image: url("../../img/mail-input.svg");
       background-repeat: no-repeat;
       background-position: right;
+      background-size: contain;
     }
   }
 
   .contact-details__input-text {
     margin: 0;
-    background-size: 60px;
   }
 
   .contact-details__input-text[placeholder] {

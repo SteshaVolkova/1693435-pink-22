@@ -44,14 +44,16 @@
   &:focus {
     border-color: @link-color;
   }
-}
 
-.user-emotions__textarea::placeholder {
-  color: @dark-border-blue;
-}
+  &::placeholder {
+    color: @dark-border-blue;
+    opacity: 1;
+  }
 
-.user-emotions__textarea[palceholder] {
-  color: @dark-border-blue;
+  &[palceholder] {
+    color: @dark-border-blue;
+    opacity: 1;
+  }
 }
 
 @media (min-width: @tablet-screen) {

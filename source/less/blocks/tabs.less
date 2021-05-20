@@ -13,8 +13,20 @@
   color: @dark-border-blue;
   opacity: 0.3;
 
+  &:hover,
+  &:focus {
+    color: @dark-border-blue;
+    opacity: 0.5;
+  }
+
   &.selected {
     color: @link-color;
+
+    &:hover,
+    &:focus {
+      color: @dark-border-blue;
+      opacity: 0.5;
+    }
   }
 
   &.contast-icon {
@@ -67,6 +79,12 @@
       height: 24px;
       width: 22px;
       color: @link-color;
+
+      &:hover,
+      &:focus {
+        color: @dark-border-blue;
+        opacity: 0.5;
+      }
     }
 
     img {

@@ -1,8 +1,8 @@
 var navMain = document.querySelector(".page-header");
 var pageMain = document.querySelector(".page-main");
-var navToggle = document.querySelector(".page-header__main-nav--toggle");
-var navOpen = document.querySelector(".page-header__main-nav--open-button");
-var navClose = document.querySelector(".page-header__main-nav--close-button");
+var navToggle = document.querySelector(".page-header__main-nav-toggle");
+var navOpen = document.querySelector(".page-header__main-nav-open-button");
+var navClose = document.querySelector(".page-header__main-nav-close-button");
 
 navMain.classList.remove("nojs");
 navMain.classList.remove("opened");

@@ -99,7 +99,6 @@ exports.sprite = sprite;
 const copy = (done) => {
   gulp.src(["source/assets/**/*",
   "!source/assets/**/README"], {
-    base: "source"
   })
     .pipe(gulp.dest("build"))
   done();

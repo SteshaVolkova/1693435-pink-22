@@ -1,9 +1,7 @@
 const gulp = require("gulp");
-const plumber = require("gulp-plumber");
-const less = require("gulp-less");
-const postcss = require("gulp-postcss");
-const autoprefixer = require("autoprefixer");
-const csso = require("gulp-csso");
+
+const styles = require("./gulp/styles")
+
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
@@ -15,23 +13,7 @@ const sync = require("browser-sync").create();
 const concat = require('gulp-concat');
 const gulpHtmlBemValidator = require("gulp-html-bem-validator");
 
-
-// Styles
-
-const styles = () => {
-  return gulp.src("source/less/style.less", { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(csso())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css", { sourcemaps: true }))
-    .pipe(sync.stream());
-}
-
-exports.styles = styles;
+exports.style = styles;
 
 // HTML
 

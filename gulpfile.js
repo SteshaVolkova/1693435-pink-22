@@ -6,11 +6,10 @@ const html = require("./gulp/html");
 const images = require("./gulp/images");
 const sprite = require("./gulp/sprite");
 const copy = require("./gulp/copyAssets");
+const test = require("./gulp/test");
 
 const del = require("del");
 const sync = require("browser-sync").create();
-
-const gulpHtmlBemValidator = require("gulp-html-bem-validator");
 
 exports.style = styles;
 exports.html = html;
@@ -18,6 +17,7 @@ exports.scripts = scripts;
 exports.images = images;
 exports.sprite = sprite;
 exports.copy = copy;
+exports.test = test;
 
 // Clean
 
@@ -58,11 +58,6 @@ const watcher = () => {
   gulp.watch("source/icons/*.svg", gulp.series(sprite, reload));
 };
 
-// Bem validator
-
-exports.bemCheck = async function () {
-  gulp.src("build/*.html").pipe(gulpHtmlBemValidator());
-};
 
 // Build
 

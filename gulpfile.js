@@ -66,11 +66,8 @@ exports.bemCheck = async function () {
 
 // Build
 
-const build = gulp.series(
-  clean,
-  gulp.parallel(html, copy, styles, scripts, sprite, images)
-);
+const build = gulp.parallel(html, copy, styles, scripts, sprite, images)
 
-exports.build = build;
+exports.build = gulp.series(clean, build);
 
-exports.default = gulp.series(server, watcher);
+exports.default = gulp.series(build, server, watcher);

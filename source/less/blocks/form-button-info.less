@@ -34,16 +34,15 @@
   &:active {
     background-color: @submit-hover-green;
     border-color: @submit-hover-green;
-    color: @white-opacity;
+    color: rgba(@white, 30%);
     outline: none;
   }
-}
 
-.form-button-info__form-submit-button[disabled="disabled"] {
-  background-color: @border-lightgray;
-  border-color: @border-lightgray;
-  color: @white;
-  opacity: @white-opacity;
+  &[disabled] {
+    background-color: @border-lightgray;
+    border-color: @border-lightgray;
+    color: @white;
+  }
 }
 
 .description-text {
